@@ -3,11 +3,12 @@
     align-items: center;
     margin-left: 7vw;
 }
+
 .menu__link {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-family: 'PT Astra Sans',Arial;
     margin-right: 45px;
     text-decoration: none;
-    color: black;
+    color: #163E6C;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -15,15 +16,15 @@
     pointer-events: none;
 }
 .menu__link:hover{
-    color: black;
+    color: #163E6C;
 }
 .menu__link_active{
     pointer-events:initial;
     cursor:pointer;
-    color:black;   
+    color:#163E6C;   
 }
 .menu__link_active:hover{
-    color:blue;
+    color:#163E6C;
 }
 @media screen and (max-width:750px) {
     .menu{

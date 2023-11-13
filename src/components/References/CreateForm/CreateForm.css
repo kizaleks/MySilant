@@ -1,0 +1,11 @@
+.infocar{
+    margin:0 auto;
+    font-family: 'PT Astra Sans',Arial;
+   
+    color:  #163E6C;
+}
+form{
+    border-radius: 9px;
+    border: 2px solid #EBE6D6
+    
+}

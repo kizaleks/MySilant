@@ -1,12 +1,6 @@
 .footer{
     margin-top: 65px ;
-    background-color: #029491;
-}
-.footer__wrapper{
-    width: 96vw;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    background-color: #163E6C;
 }
 .footer__connectInfo{
     text-align: flex-end;

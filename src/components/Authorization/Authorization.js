@@ -1,7 +1,6 @@
 import React from 'react'
 import './Authorization.css'
-import peopleWithKey from './peopleWithKey.svg';
-import padlock from './padlock.svg';
+
 import FormAuthorization from './Form/Form';
 import { useSelector } from 'react-redux';
 
@@ -13,14 +12,12 @@ const Authorization = () => {
     <main className='main'>
       <div className='main__wrapper-auth'>
         <div className='main__leftBox'>
-          <h1 className='main__title'>Для оформления подписки на тариф, необходимо авторизоваться.</h1>
-          <img className='main__image' src={peopleWithKey} alt='peopleWithKey' hidden={isShown}/>
+          <h1 className='main__title'>Авторизируйтесь что бы видеть больше информации.</h1>
+    
         </div>
-        <div className='main__rightBox'>
-          <img className='main__padlockImg' src={padlock} alt='padlock' />
+        <div className='main__rightBox'>          
           <FormAuthorization />
         </div>
-        <img className='main__image' src={peopleWithKey} alt='peopleWithKey' hidden={!isShown}/>
       </div>
     </main>
   )

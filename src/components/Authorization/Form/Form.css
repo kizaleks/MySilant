@@ -12,8 +12,8 @@
 .form__link{
     display: inline-block;
     text-decoration: none;
-    color: #029491;
-    border-bottom: 3px solid #029491;
+    color: #EBE6D6;
+    border-bottom: 3px solid black;
     margin-right: 15px;
     width: 35%;
     padding-left: 0px;
@@ -24,15 +24,15 @@
     pointer-events: none;
 }
 .form__link_inactive{
-    color: #C7C7C7;
-    border-bottom: 3px solid #C7C7C7;
+    color: #EBE6D6;
+    border-bottom: 3px solid #EBE6D6;
     margin-right: 0px;
     width: 60%
 }
 .form__button{
     width: -webkit-fill-available;
-    background-color: #5970FF;
-    color: #FFFFFF;
+    background-color: #EBE6D6;
+    color: #163E6C;
     height: 60px;
     border-radius: 5px;
     border: none;
@@ -42,7 +42,8 @@
 }
 .form__ResumeLink{
     margin-top: 15px;
-    color: #5970FF;
+    
+    color: #EBE6D6;
     cursor: default;
     pointer-events: none;
     font-size: 14px;

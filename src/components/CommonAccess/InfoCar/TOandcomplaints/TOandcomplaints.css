@@ -1,0 +1,75 @@
+.TOandcomplaints{
+    margin:0 auto;
+    
+    flex-direction: column;
+    font-family: 'PT Astra Sans',Arial; 
+    color:  #163E6C; 
+}
+
+.TOandcomplaints_table{
+     
+    font-family: 'PT Astra Sans',Arial; 
+    color:  #163E6C; 
+}
+.TOandcomplaints form{   
+    border-radius: 9px;
+    border: 2px solid #EBE6D6    
+}
+.TOandcomplaints button {
+    width:100%;
+  margin: 10px 10px;
+  padding: 10px 15px;
+  line-height: 28px;
+  border: 10 px;
+  border-radius: 9px;
+  border: 2px solid black;
+  font-size: 1.2em;
+  color: #163E6C;
+  background: #EBE6D6;
+  transition: 0.3s;
+}
+
+.TOandcomplaints select {
+    margin: 10px 10px;
+    padding: 10px 15px;
+    line-height: 28px;
+    border: 10 px;
+    border-radius: 9px;
+    border: 2px solid black;
+    font-size: 1.2em;
+    color: #163E6C;
+    background: white;
+    transition: 0.3s;
+  }
+  .TOandcomplaints text{    
+    border: none;
+    margin: 10px 10px;
+    padding: 10px 15px;
+    line-height: 28px;
+    border-radius: 9px;
+    border: 2px solid #163E6C;
+    font-size: 1.2em;
+    color: #163E6C;
+    background: #EBE6D6;
+    transition: 0.3s;
+
+  }
+
+  .TOandcomplaints input {    
+    margin: 10px 10px;
+    padding: 10px 15px;
+    line-height: 28px;
+    border: 2;
+    border-radius: 9px;
+    border: 2px solid black;
+    font-size: 1.2em;
+    color: #163E6C;
+    background: white;
+    transition: 0.3s;
+  } 
+  @media screen and (max-width: 750px) {
+    .TOandcomplaints{
+        font-size: 14px;
+        line-height: 15px; 
+    }  
+}

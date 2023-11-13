@@ -1,0 +1,69 @@
+.ComplaintsForm{
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'PT Astra Sans',Arial; 
+    color:  #163E6C; 
+}
+.ComplaintsForm form{   
+    border-radius: 9px;
+    border: 2px solid #EBE6D6    
+}
+
+.ComplaintsForm  select {
+    margin: 10px 10px;
+    padding: 10px 15px;
+    line-height: 28px;
+    border: 10 px;
+    border-radius: 9px;
+    border: 2px solid black;
+    font-size: 1.2em;
+    color: #163E6C;
+    background: white;
+    transition: 0.3s;
+  }
+.ComplaintsForm button {
+    margin: 10px 10px;
+    padding: 10px 15px;
+    line-height: 28px;
+    border: 10 px;
+    border-radius: 9px;
+    border: 2px solid black;
+    font-size: 1.2em;
+    color: #163E6C;
+    background: #EBE6D6;
+    transition: 0.3s;
+  }
+  .ComplaintsForm text{
+    
+    border: none;
+    margin: 10px 10px;
+    padding: 10px 15px;
+    line-height: 28px;
+    border-radius: 9px;
+    border: 2px solid #163E6C;
+    font-size: 1.2em;
+    color: #163E6C;
+    background: #EBE6D6;
+    transition: 0.3s;
+
+  }
+
+  .ComplaintsForm input {    
+    margin: 10px 10px;
+    padding: 10px 15px;
+    line-height: 28px;
+    border: 2;
+    border-radius: 9px;
+    border: 2px solid black;
+    font-size: 1.2em;
+    color: #163E6C;
+    background: white;
+    transition: 0.3s;
+  } 
+  @media screen and (max-width: 750px) {
+    .ComplaintsForm{
+        font-size: 14px;
+        line-height: 15px; 
+    }  
+}

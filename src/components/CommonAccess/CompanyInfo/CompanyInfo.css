@@ -1,0 +1,71 @@
+.CompanyInfo{
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'PT Astra Sans',Arial; 
+    color:  #163E6C; 
+}
+
+.CompanyInfo form{   
+    border-radius: 9px;
+    border: 2px solid #EBE6D6    
+}
+.CompanyInfo button {
+    width:100%;
+  margin: 10px 10px;
+  padding: 10px 15px;
+  line-height: 28px;
+  border: 10 px;
+  border-radius: 9px;
+  border: 2px solid black;
+  font-size: 1.2em;
+  color: #163E6C;
+  background: #EBE6D6;
+  transition: 0.3s;
+}
+
+.CompanyInfo select {
+    margin: 10px 10px;
+    padding: 10px 15px;
+    line-height: 28px;
+    border: 10 px;
+    border-radius: 9px;
+    border: 2px solid black;
+    font-size: 1.2em;
+    color: #163E6C;
+    background: white;
+    transition: 0.3s;
+  }
+  .CompanyInfo text{    
+    border: none;
+    margin: 10px 10px;
+    padding: 10px 15px;
+    line-height: 28px;
+    border-radius: 9px;
+    border: 2px solid #163E6C;
+    font-size: 100%;
+    color: #163E6C;
+    background: #EBE6D6;
+    transition: 0.3s;
+
+  }
+
+  .CompanyInfo input {    
+    margin: 10px 10px;
+    padding: 10px 15px;
+    line-height: 28px;
+    border: 2;
+    border-radius: 9px;
+    border: 2px solid black;
+    font-size: 1.2em;
+    color: #163E6C;
+    background: white;
+    transition: 0.3s;
+  } 
+  @media screen and (max-width: 750px) {
+    .CompanyInfo{
+        font-size: 14px;
+        line-height: 15px; 
+    }  
+}
+

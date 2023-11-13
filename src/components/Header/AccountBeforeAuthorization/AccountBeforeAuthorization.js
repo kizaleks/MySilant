@@ -1,27 +1,22 @@
 import React from 'react';
 import './AccountBeforeAuthorization.css';
-import verticalSlash from './verticalSlash.svg';
+
 import { useNavigate } from "react-router-dom";
 
-function LoginButton() {
+
+const AccountBeforeAuthorization = (props) => {
   const navigate = useNavigate();
 
   function handleClick() {
+   //props.in_detail() 
     navigate("/login");
   }
+  
   return (
-    <button className='accountPanel__button' type="button" onClick={handleClick}>
-      Войти
+    <div className='accountPanel'>        
+       <button className='accountPanel__button' type="button" onClick={handleClick}>
+      Выйти/Войти
     </button>
-  );
-}
-
-const AccountBeforeAuthorization = () => {
-  return (
-    <div className='accountPanel'>
-        <a className='accountPanel__link' href='xxx'>Зарегистрироваться</a>
-        <img className='accountPanel__verticalSlash' src={verticalSlash} alt='verticalSlash' />
-        <LoginButton />
     </div> 
   )
 }

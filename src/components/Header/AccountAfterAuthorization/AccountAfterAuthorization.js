@@ -1,14 +1,25 @@
-import React from 'react';
-import CompanyInfo from './CompanyInfo/CompanyInfo';
-import Avatar from './Avatar/Avatar';
+import React from 'react'
+import {useNavigate} from 'react-router-dom';
+import { signOut } from '../../../store/profile';
+import { useDispatch } from 'react-redux';
 import './AccountAfterAuthorization.css'
 
-const AccountAfterAuthorization = () => {
+
+const AccountAfterAuthorization = (props) => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch()
+  function handleClick() {
+  // props.in_detail() 
+    navigate("/login");
+    dispatch(signOut()); 
+      
+  } 
 return (
     <div className='accountPanel'> 
-      <CompanyInfo /> 
-      <Avatar />
-    </div>
+     <button className='avatar__button' type="button" onClick={handleClick}>
+     Выйти/Войти
+    </button>
+      </div>
   )
 }
 

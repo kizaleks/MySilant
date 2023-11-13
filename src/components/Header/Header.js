@@ -4,22 +4,25 @@ import './Header.css';
 import AccountBeforeAuthorization from './AccountBeforeAuthorization/AccountBeforeAuthorization';
 import AccountAfterAuthorization from './AccountAfterAuthorization/AccountAfterAuthorization';
 import NavBar from './NavBar/NavBar';
-import MobileMenu from './MobileMenu/MobileMenu';
-import logo from './logo.svg';
+
+import logo from './Logotype.jpg';
 
 function Header() {
-  const accountInfo = useSelector((state)=>state.profile.companyInfo);
-  const AccountElement = accountInfo ? AccountAfterAuthorization : AccountBeforeAuthorization
+  let authorized_status = useSelector(state => state.profile.status)
+  const is_authorized = localStorage.getItem('is_authorized');  
+  const AccountElement = is_authorized ? AccountAfterAuthorization : AccountBeforeAuthorization
+   //  
   return (
     <header className='header'>
       <div className='header__wrapper'>
       <div className='logo'>
         <img src={logo} alt='logo'/>
+       
     </div>
         <NavBar />
-        <AccountElement /> 
-        <MobileMenu />       
-      </div>  
+       <AccountElement />
+        </div> 
+
     </header>
   )
 }

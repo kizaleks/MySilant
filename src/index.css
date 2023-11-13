@@ -5,9 +5,9 @@
   /* Браузер сначала попробует найти шрифт локально */
   src: local("Inter"),
        /* Если не получилось*/
-       url("/fonts/Inter-Medium.ttf") format("ttf"),
+       url("/fonts/PT-Astra-Sans_Regular.ttf") format("ttf"),
 }
 body {
   margin: 0 auto;
-  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'PT-Astra-Sans', 'Arial', 'Helvetica', sans-serif;
 }

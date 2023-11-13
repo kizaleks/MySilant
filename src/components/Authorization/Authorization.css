@@ -1,12 +1,8 @@
 @font-face {
-    font-family: "Ferry";
+    font-family: "PT Astra Sans";
     font-style: normal;
     font-weight: 400;
-    /* Браузер сначала попробует найти шрифт локально */
-    src: local("Ferry"),
-         /* Если не получилось*/
-         url("/fonts/ferry_black.otf") format("otf"),
-  }
+     }
 .main{
     margin-top: 45px;
 }

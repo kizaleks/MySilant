@@ -1,11 +1,10 @@
-import './App.css';
 import React, {useEffect} from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Main from '../Main/Main';
 
-import { setScreenWidth } from '../../requests/app';
-import {getCompanyInfo} from '../../requests/profile'
+import { setScreenWidth } from '../../store/app';
+import {getCompanyInfo} from '../../store/profile'
 
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -24,8 +23,12 @@ function App() {
       dispatch(getCompanyInfo())
     }
   },[dispatch, companyQuantityInfo])
+  /*<Header />
+  <Main   />
+  <Footer />*/
+  
   return (
-    <div>
+    <div>           
       <Header />
       <Main />
       <Footer />

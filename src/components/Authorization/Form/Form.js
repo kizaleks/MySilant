@@ -3,11 +3,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import {useNavigate} from 'react-router-dom';
 import Inputs from '../Inputs/Inputs';
 import './Form.css';
-import FormFooter from '../FormFooter/FormFooter';
-import { dropStatus, signIn } from '../../../requests/profile';
+import { dropStatus, signIn } from '../../../store/profile';
 
 const FormAuthorization = () => {
-  const [login, setLogin] = useState('');
+  const [username, setLogin] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false)
   const dispatch = useDispatch()
@@ -18,26 +17,25 @@ const FormAuthorization = () => {
       navigate("/");
       dispatch(dropStatus())
     }
-    if(signInStatus === 'error'){
+    if(signInStatus === 'error'){      
       setError(true);
     }
   },[error , signInStatus, navigate, dispatch])
   const  handleSubmit = async () => {
     dispatch(signIn({
-      login,
+      username,
       password
     }))
        
   }
-  const submitDisable = !( login && password )
+  const submitDisable = !( username && password )
   return (
       <div className='form__container'>
         <div className='form__linkBox'>
-          <a className='form__link' href='xxx' >Войти</a>
-          <a className='form__link form__link_inactive' href='xxx'>Зарегистрироваться</a>
+          <a >Войти</a>          
         </div>
         <Inputs 
-        login={login} 
+        username={username} 
         password={password} 
         setLogin={setLogin} 
         setPassword={setPassword}
@@ -48,10 +46,10 @@ const FormAuthorization = () => {
         onClick={handleSubmit} 
         disabled={submitDisable}
         style={submitDisable ? {opacity:`${'50%'}`} : {opacity:`${'100%'}`}}>Войти</button>
-        <a className='form__ResumeLink' href='xxx' >Восстановить пароль</a>
-        <FormFooter />
+
       </div>
   )
 }
 
 export default FormAuthorization
+

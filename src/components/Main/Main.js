@@ -2,26 +2,30 @@ import React from "react";
 import {Navigate, Route,Routes} from "react-router-dom";
 import { useSelector } from "react-redux";
 import CommonAccess from "../CommonAccess/CommonAccess";
+import References from '../References/References';
 import AuthorizationMain from "../Authorization/Authorization";
-import SearchPage from "../SearchPage/SearchPage";
-import ResultPage from "../ResultPage/ResultPage";
+
+
 
 const Main = () => {
-  let companyInfo = useSelector(state => state.profile.companyInfo)
-  return companyInfo ? (
-        <Routes> 
-          <Route path="/" element={<CommonAccess />}/>
-          <Route path="/search" element={<SearchPage/>}/>
-          <Route path="/result" element={<ResultPage/>}/>
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes> 
-  ) : (
-    <Routes>
-        <Route path="/" element={<CommonAccess />}/>
-        <Route path="/login" element={<AuthorizationMain/>} />
-        <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
+  let is_authorized = localStorage.getItem('is_authorized')
+  //let companyInfo = useSelector(state => state.profile.is_authorized)
+ // alert("test")
+  //alert(is_authorized)
+  
+  return (
+        <Routes>
+          is_authorized? (           
+          <Route path="/" element={<CommonAccess />}/> 
+          <Route path="/references" element={<References/>}/>   
+          <Route path="*" element={<Navigate to="/" />} />        
+        ):( 
+        <Route path="/" element={<CommonAccess />}/> 
+        <Route path="/login" element={<AuthorizationMain/>} />       
+        <Route path="*" element={<Navigate to="/" />} />)
+        </Routes>      
   )
+  
 }
 
 
