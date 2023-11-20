@@ -2,7 +2,7 @@
     display:flex;
     align-items: center;
     margin-left: 7vw;
-}
+} 
 
 .menu__link {
     font-family: 'PT Astra Sans',Arial;
@@ -26,13 +26,36 @@
 .menu__link_active:hover{
     color:#163E6C;
 }
-@media screen and (max-width:750px) {
-    .menu{
-    margin-left: 60px;
-    }  
-}
-@media screen and (max-width:950px) {
-    .menu{
-        display: none;
+
+@media (min-width: 1537px) and (max-width: 1920px)  {
+    .menu__link{       
+        margin-left: 60px;
+        font-size: 1.4em;
     } 
-}
+   
+  }
+  @media (min-width: 1441px) and (max-width: 1536px)  {
+    .menu__link{
+        margin-left: 60px;
+        font-size: 1.2em;
+    } 
+  }
+  @media (min-width: 1367px) and (max-width: 1440px)  {
+    .menu__link{
+        margin-left: 60px;
+        font-size: 1.2em;
+    } 
+  }
+  @media (min-width: 360px) and (max-width: 1366px) {
+    .menu__link{
+        margin-left: 30px;
+        font-size: 1.2em;
+    } 
+  }
+  @media screen and (max-width:360px) {
+    .menu__link{
+        margin-left: 30px;
+        font-size: 1.2em;
+            } 
+  }
+

@@ -8,7 +8,8 @@ import Maintenance from './Maintenance/Maintenance';
 import InfoCar from './InfoCar/InfoCar';
 import Complaints from './Complaints/Complaints';
 //import "react-tabulator/lib/styles.css"
-import "react-tabulator/css/tabulator_midnight.min.css"; // use Theme(s)
+//import "react-tabulator/css/tabulator_midnight.min.css"; // use Theme(s)
+import "react-tabulator/css/tabulator.min.css";
 import { useNavigate } from "react-router-dom";
 const CommonAccess = () => {
   const [widgetname, setWidget] = useState('InfoCar');
@@ -21,8 +22,7 @@ const CommonAccess = () => {
    //props.in_detail() 
     navigate("/references");
   }  
-  return (
-    <main className='CommonAccess'>
+  return (   
       <div >  
       <div >
           {(is_authorized)&&
@@ -46,9 +46,14 @@ const CommonAccess = () => {
               
               {(is_authorized)&&<br></br>}
           </div> 
-          <br></br>      
-          {(is_authorized)&&
-            <button className='accountPanel__button' type="button" onClick={handleClick}> Справочники</button>} 
+          <br></br> 
+          <label className='Button'>
+           {(is_authorized)&&          
+           <button type="button" onClick={handleClick}> Справочники</button>}   
+            </label>     
+          
+            
+            
       {(!is_authorized)&&
          <BaseInfoCar />           
   }
@@ -63,7 +68,7 @@ const CommonAccess = () => {
         <Complaints formmode="full"/>          
   }        
       </div> 
-    </main>
+    
   )
 }
 

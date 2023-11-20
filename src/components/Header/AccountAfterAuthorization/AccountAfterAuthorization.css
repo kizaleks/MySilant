@@ -5,15 +5,40 @@
   line-height: 28px;
   border: 10 px;
   border-radius: 9px;
-  border: 2px solid black;
+  border: 2px solid #6c757d;
   font-size: 1.2em;
   color: #163E6C;
   background: #EBE6D6;
   transition: 0.3s;
 }
-
-@media screen and (max-width:750px) {
-    .accountPanel{
-        display:none;
+@media (min-width: 1537px) and (max-width: 1920px)  {
+  .accountPanel button {
+    font-size: 1.4em;      
+      width: 20vw;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1536px)  {
+  .accountPanel button {
+    font-size: 1.2em;      
+      width: 20vw;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1440px)  {
+  .accountPanel button {
+    font-size: 1.2em;      
+      width: 20vw;
+  }
+}
+@media (min-width: 360px) and (max-width: 1366px) {
+  .accountPanel button {
+    font-size: 1em;     
+      width: 20vw;
     }
 }
+@media screen and (max-width:360px) {
+  .accountPanel button {
+    font-size: 0.8em;     
+      width: 20vw;
+  }
+}
+

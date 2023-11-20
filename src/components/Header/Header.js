@@ -16,7 +16,7 @@ function Header() {
     <header className='header'>
       <div className='header__wrapper'>
       <div className='logo'>
-        <img src={logo} alt='logo'/>
+        <img className='logo' src={logo} alt='logo'/>
        
     </div>
         <NavBar />

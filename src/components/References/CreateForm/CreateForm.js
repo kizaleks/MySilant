@@ -46,7 +46,7 @@ const CreateForm = () => {
       <br></br>
       </form>
       <button onClick={add_entry}>Добавить</button> 
-      
+       
       
       </div> 
     </main>

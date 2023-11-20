@@ -13,7 +13,7 @@ const AccountAfterAuthorization = (props) => {
     navigate("/login");
     dispatch(signOut()); 
       
-  } 
+  }  
 return (
     <div className='accountPanel'> 
      <button className='avatar__button' type="button" onClick={handleClick}>

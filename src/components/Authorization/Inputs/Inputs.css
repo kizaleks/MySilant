@@ -16,7 +16,7 @@
 }
 .form__errText{
     display: block;
-    color: tomato;
+    color: #D20A11;
     align-self: center;
     margin: -8px auto 10px auto;
 }

@@ -71,7 +71,7 @@ class Complaints extends React.Component{
 
   columns = [
    // { title: '', field: 'checkbox', align: 'center', headerSort: false, formatter: 'rowSelection' },
-    { title: "ID", field: "id",width: 250 },
+    { title: "ID", field: "id",width: 150 },
     { title: "Машина", field: "car",align:"left", width: 250, headerFilter: "input",  },
     { title: "Сервисная организация", field: "service_company", align:"left", width: 250, headerFilter: "input",  },
     { title: "Дата отказа", field: "date_of_refusal", align:"left", width: 250, headerFilter: "input", },    
@@ -171,10 +171,12 @@ class Complaints extends React.Component{
           {(this.state.in_detail)&&
          <ComplaintsForm in_detail={this.briefly} item={this.state.selectedId} mode={this.state.mode} 
          formmode={this.props.formmode} car={this.props.car}/> 
-          }           
-        {(!this.state.in_detail&&localStorage.getItem('сategory')!="Клиент")&&
+          } 
+          <label className='Button'>
+                {(!this.state.in_detail&&localStorage.getItem('сategory')!="Клиент")&&
         <button onClick={this.create}>Добавить</button>
-  }
+  }          </label>          
+  
 
       </div>
     );

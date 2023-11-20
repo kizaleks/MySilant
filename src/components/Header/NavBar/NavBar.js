@@ -12,12 +12,12 @@ const NavBar = () => {
   let authorized_status = useSelector(state => state.profile.status)
   
   
-  //
+  // 
  
   
   return (
     <nav className='menu'>
-        <Link className='menu__link menu__link_active' to='/'>Главная</Link>    
+        <Link className='menu__link  menu__link_active' to='/'>Главная</Link>    
              
     </nav>
   )

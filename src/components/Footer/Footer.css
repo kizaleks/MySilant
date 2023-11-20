@@ -1,10 +1,6 @@
-.footer{
-    margin-top: 65px ;
-    background-color: #163E6C;
-}
-.footer__connectInfo{
-    text-align: flex-end;
-    margin-top: 27px;
-    color:white;
-}
+:root{
+    margin:0 auto;  
+    font-family: 'PT Astra Sans',Arial; 
+    color:  #163E6C;   
 
+}

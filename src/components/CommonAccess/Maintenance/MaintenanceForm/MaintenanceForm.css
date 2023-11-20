@@ -1,15 +1,52 @@
-.MaintenanceForm{
-    margin:0 auto;
-    display: flex;
-    flex-direction: column;
-    font-family: 'PT Astra Sans',Arial; 
-    color:  #163E6C; 
+:root{
+  margin:0 auto;   
+  font-family: 'PT Astra Sans',Arial; 
+  color:  #163E6C;   
 }
-.MaintenanceForm form{   
-    border-radius: 9px;
-    border: 2px solid #EBE6D6    
+
+.Button1 button  { 
+  width: 100%;
+margin: 10px 10px;
+padding: 10px 15px;
+line-height: 28px;
+border: 10 px;
+border-radius: 9px;
+border: 2px solid  #6c757d;
+font-size: 1.2em;
+color:  #163E6C; 
+background: #EBE6D6;
+transition: 0.3s;
 }
-.MaintenanceForm button {
+.Button2 button  { 
+  width: 100%;
+margin: 10px 10px;
+padding: 10px 15px;
+line-height: 28px;
+border: 10 px;
+border-radius: 9px;
+border: 2px solid  #6c757d;
+font-size: 1.2em;
+color:  #163E6C; 
+background: #EBE6D6;
+transition: 0.3s;
+}
+
+
+.Button button  { 
+  width: 100%;
+  margin: 10px 10px;
+  padding: 10px 15px;
+  line-height: 28px;
+  border: 10 px;
+  border-radius: 9px;
+  border: 2px solid  #6c757d;
+  font-size: 1.2em;
+  color:  #163E6C; 
+  background: #EBE6D6;
+  transition: 0.3s;
+  }
+
+.MaintenanceForm button { 
   margin: 10px 10px;
   padding: 10px 15px;
   line-height: 28px;
@@ -29,8 +66,10 @@
     border: 10 px;
     border-radius: 9px;
     border: 2px solid black;
-    font-size: 1.2em;
     color: #163E6C;
+    
+    font-size: 1.2em;
+   /*color: #163E6C;*/
     background: white;
     transition: 0.3s;
   }
@@ -60,9 +99,207 @@
     background: white;
     transition: 0.3s;
   } 
-  @media screen and (max-width: 750px) {
-    .MaintenanceForm{
-        font-size: 14px;
-        line-height: 15px; 
-    }  
+  
+    
+  
+
+
+@media (min-width: 1537px) and (max-width: 1920px)  {
+  .MaintenanceForm form .group1 text, .FullDateForm form .group1 select{       
+    font-size: 1.2em;      
+    width: calc(100% / 6 - 22px); 
+      }
+   .MaintenanceForm form .group3 text, .FullDateForm form .group3 select{    
+    font-size: 1.2em;   
+    width: calc(100% / 6 - 22px);   
+      }
+  .MaintenanceForm form .group5 text, .FullDateForm form .group5 select{     
+    font-size: 1.2em;     
+    width: calc(100% / 6 - 22px); 
+    
+      }
+  .MaintenanceForm form .group7 text , .FullDateForm form .group7 input{ 
+    font-size: 1.2em;     
+    width: calc(100% / 6 - 22px); 
+      }
+  .MaintenanceForm form .group9 text, .FullDateForm form .group9 input{   
+    font-size: 1.2em;     
+    width: calc(100% / 6 - 22px); 
+      }
+  .MaintenanceForm form .group11 text, .FullDateForm form .group11 input{ 
+    font-size: 1.2em;   
+    width: calc(100% / 6 - 22px); 
+      }
+  .MaintenanceForm form .group13 text, .FullDateForm form .group13 input{ 
+    font-size: 1.2em;    
+      width: 10%;
+      }
+  .MaintenanceForm form .group15 text, .FullDateForm form .group15 input{ 
+    font-size: 1.2em;     
+      width: 10%;
+      }  
+        .MaintenanceForm form .group6,  .group12 {           
+          display: block ;  
+          }            
+  }
+  @media (min-width: 1441px) and (max-width: 1536px)  {
+    .MaintenanceForm form .group1 text, .FullDateForm form .group1 select{       
+      font-size: 1.2em;  
+        width:  25%; 
+        }
+     .MaintenanceForm form .group3 text, .FullDateForm form .group3 select{    
+      font-size: 1.2em;  
+        width:  25%;  
+        }
+    .MaintenanceForm form .group5 text, .FullDateForm form .group5 select{     
+      font-size: 1.2em;  
+        width:  25%; 
+      
+        }
+    .MaintenanceForm form .group7 text , .FullDateForm form .group7 input{ 
+      font-size: 1.2em;  
+        width:  25%; 
+        }
+    .MaintenanceForm form .group9 text, .FullDateForm form .group9 input{   
+      font-size: 1.2em;  
+        width:  25%;
+        }
+    .MaintenanceForm form .group11 text, .FullDateForm form .group11 input{ 
+      font-size: 1.2em;  
+        width:  25%; 
+        }
+    .MaintenanceForm form .group13 text, .FullDateForm form .group13 input{ 
+      font-size: 1.2em;  
+        width:  25%;
+        }
+    .MaintenanceForm form .group15 text, .FullDateForm form .group15 input{ 
+      font-size: 1.2em;  
+        width:  50%;
+        }  
+          .MaintenanceForm form .group4, .group8,  .group12,  .group14  {           
+            display: block ;  
+            }
+              
+    }
+ @media (min-width: 1367px) and (max-width: 1440px)  {
+  .MaintenanceForm form .group1 text, .FullDateForm form .group1 select{       
+    font-size: 1em;    
+        width:  25%; 
+      }
+   .MaintenanceForm form .group3 text, .FullDateForm form .group3 select{    
+    font-size: 1em;    
+        width:  25%; 
+      }
+  .MaintenanceForm form .group5 text, .FullDateForm form .group5 select{     
+    font-size: 1em;    
+        width:  25%; 
+    
+      }
+  .MaintenanceForm form .group7 text , .FullDateForm form .group7 input{ 
+    font-size: 1em;    
+        width:  25%;
+      }
+  .MaintenanceForm form .group9 text, .FullDateForm form .group9 input{   
+    font-size: 1em;    
+        width:  25%;
+      }
+  .MaintenanceForm form .group11 text, .FullDateForm form .group11 input{ 
+    font-size: 1em;    
+    width:  25%;
+      }
+  .MaintenanceForm form .group13 text, .FullDateForm form .group13 input{ 
+    font-size: 1em;    
+    width:  25%;
+      }
+  .MaintenanceForm form .group15 text, .FullDateForm form .group15 input{ 
+    font-size: 1em;    
+        width:  25%;
+      }  
+        .MaintenanceForm form .group4, .group8,  .group12 {           
+          display: block ;  
+          }
+                
+    }
+
+ @media (min-width: 361px) and (max-width: 1366px) {
+  .MaintenanceForm form .group1 text, .FullDateForm form .group1 select{       
+    font-size: 1em;    
+    width: 50%; 
+      }
+   .MaintenanceForm form .group3 text, .FullDateForm form .group3 select{    
+    font-size: 1em;    
+    width: 50%; 
+      }
+  .MaintenanceForm form .group5 text, .FullDateForm form .group5 select{     
+    font-size: 1em;    
+    width: 50%;
+    
+      }
+  .MaintenanceForm form .group7 text , .FullDateForm form .group7 input{ 
+    font-size: 1em;    
+    width: 50%;
+      }
+  .MaintenanceForm form .group9 text, .FullDateForm form .group9 input{   
+    font-size: 1em;    
+    width: 50%;
+      }
+  .MaintenanceForm form .group11 text, .FullDateForm form .group11 input{ 
+    font-size: 1em;    
+    width: 50%;
+      }
+  .MaintenanceForm form .group13 text, .FullDateForm form .group13 input{ 
+    font-size: 1em;    
+    width: 50%;
+      }
+  .MaintenanceForm form .group15 text, .FullDateForm form .group15 input{ 
+    font-size: 1em;    
+    width: 50%;
+      }  
+        .MaintenanceForm form .group2, .group4, .group6, .group8, .group10, .group12, .group14 {           
+          display: block ;  
+          }
 }
+@media (max-width: 360px) {
+  .MaintenanceForm form .group1 text, .FullDateForm form .group1 select{       
+    display: block ;     
+    font-size: 0.8em;    
+      width: 100%;
+      }
+   .MaintenanceForm form .group3 text, .FullDateForm form .group3 select{    
+    display: block ;     
+    font-size: 0.8em;    
+      width: 100%;
+      }
+  .MaintenanceForm form .group5 text, .FullDateForm form .group5 select{     
+    display: block ;     
+    font-size: 0.8em;    
+      width: 100%;
+    
+      }
+  .MaintenanceForm form .group7 text , .FullDateForm form .group7 input{ 
+    display: block ;     
+    font-size: 0.8em;    
+      width: 100%;
+      }
+  .MaintenanceForm form .group9 text, .FullDateForm form .group9 input{   
+    display: block ;     
+    font-size: 0.8em;    
+      width: 100%;
+      }
+  .MaintenanceForm form .group11 text, .FullDateForm form .group11 input{ 
+    display: block ;     
+    font-size: 0.8em;    
+      width: 100%;
+      }
+  .MaintenanceForm form .group13 text, .FullDateForm form .group13 input{ 
+    display: block ;     
+    font-size: 0.8em;    
+      width: 100%;
+      }
+  .MaintenanceForm form .group15 text, .FullDateForm form .group15 input{ 
+    display: block ;     
+    font-size: 0.8em;    
+      width: 100%;
+      }  
+      
+  }

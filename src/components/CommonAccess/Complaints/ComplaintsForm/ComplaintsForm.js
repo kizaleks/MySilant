@@ -40,7 +40,7 @@ const ComplaintsForm = (props) => {
                 setdate_of_refusal(response.data[0].date_of_refusal)
                 setoperating_time(response.data[0].operating_time)
                 setMachine_components(response.data[0].Machine_components)
-                setfailure_node(response.data[0].setfailure_node)
+                setfailure_node(response.data[0].failure_node)
                 setrecovery_method(response.data[0].recovery_method)
                 setparts_used(response.data[0].parts_used)
                 setdate_of_restoration(response.data[0].date_of_restoration)
@@ -198,13 +198,20 @@ const ComplaintsForm = (props) => {
 
 
    return (
-    <main className='ComplaintsForm'>
+    
       <div className='ComplaintsForm'>      
       <form> 
+      <label className='group1'>
         <text>Дата отказа</text>       
         <input type='date' readOnly={mode} defaultValue={date_of_refusal} onChange={e=>setdate_of_refusal(e.target.value)} ></input>
+        </label>
+        <label className='group2'></label>
+        <label className='group3'>
         <text>Наработка м/час</text>       
         <input type='text' readOnly={mode} defaultValue={operating_time} onChange={e=>setoperating_time(e.target.value)} ></input>
+        </label>
+        <label className='group4'></label>
+        <label className='group5'>
         <text>Узел отказа</text>
         <select size="1" disabled ={mode} onChange={e=>setMachine_components(e.target.value)}  >
         {(props.mode=="new")&&
@@ -215,8 +222,14 @@ const ComplaintsForm = (props) => {
 })}
        
    </select>
+   </label>
+   <label className='group6'></label>
+   <label className='group7'>
          <text>Описание отказа </text>  
         <input type='text' readOnly={mode} defaultValue={failure_node} onChange={e=>setfailure_node(e.target.value)} ></input>
+        </label>
+        <label className='group8'></label>
+        <label className='group9'>
         <text>Способ восстановления </text>
         <select size="1" disabled ={mode} onChange={e=>setrecovery_method(e.target.value)}  >
         {(props.mode=="new")&&
@@ -226,12 +239,24 @@ const ComplaintsForm = (props) => {
         return (value.id!=recovery_method)&&(<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>)  
 })} 
 </select>
+</label>
+<label className='group10'></label>
+<label className='group11'>
       <text>Используемые запасные части </text>       
         <input type='text' readOnly={mode} defaultValue={parts_used} onChange={e=>setparts_used(e.target.value)} ></input>
+       </label>
+       <label className='group12'></label>
+       <label className='group13'>
         <text>Дата восстановления</text>       
         <input type='date' readOnly={mode} defaultValue={date_of_restoration} onChange={e=>setdate_of_restoration(e.target.value)} ></input>
+       </label>
+       <label className='group14'></label>
+       <label className='group15'>
         <text> Время простоя техники</text>       
         <input type='text' readOnly={mode} defaultValue={equipment_downtime} onChange={e=>setequipment_downtime(e.target.value)} ></input>
+       </label>
+       <label className='group16'></label>
+       <label className='group17'>
         <text>Машина</text>
         <select size="1" disabled ={modecar} onChange={e=>setcar(e.target.value)}  >
         {(props.mode=="new"&&props.formmode=="full")&&
@@ -240,6 +265,9 @@ const ComplaintsForm = (props) => {
         return (value.id!=car)&&(<option value={value.id}>{value.factory_number}</option>)||(<option defaultValue={value.id}>{value.factory_number}</option>) 
 })}
    </select>
+   </label>
+   <label className='group18'></label>
+   <label className='group19'>
         <text>Сервисная организация</text>
         <select size="1" disabled ={mode} onChange={e=>setservice_company(e.target.value)}  >
         {(props.mode=="new")&&
@@ -248,11 +276,15 @@ const ComplaintsForm = (props) => {
         return (value.id!=service_company)&& (<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>) 
 })}
    </select>
+   </label>
      </form>
         <br></br>
+        <label className='Button1'>        
         {(mode=="readOnly"&&groupUser!="Клиент")&&
         <button type="button" onClick={editmode}>Редактировать</button>    
         }
+        </label>
+        <label className='Button2'>
         {(mode!="readOnly"&&groupUser!="Клиент")&&
         <button type="button" onClick={save}>Сохранить</button>    
         }
@@ -260,12 +292,12 @@ const ComplaintsForm = (props) => {
         <button type="button" onClick={deleteid}>Удалить</button>    
         }
         <button type="button" onClick={setClose}>Закрыть</button>
-      
+      </label>
       <br></br>
      
       
       </div> 
-    </main>
+    
   )
 }
 

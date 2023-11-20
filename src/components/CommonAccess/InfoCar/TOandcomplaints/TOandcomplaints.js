@@ -227,8 +227,11 @@ useEffect(() => {
       </div>
       </form>
       <br></br> 
-      <br></br> 
-      <button type="button" width="200" onClick={setClose}>Закрыть</button>
+      <br></br>
+      <label className='Button'>
+      <button type="button" width="200" onClick={setClose}>Закрыть</button>  
+        </label> 
+      
       </div> 
     </main>
   )

@@ -116,7 +116,7 @@ class References extends React.Component {
           }}
         />
       )
-    }
+    } 
   ];
    columns_red = [
     { title: "ID", field: "id",width: 150, },

@@ -1,16 +1,20 @@
-.footer{
-    margin-top: 65px ;
-    background-color: #029491;
-}
-.footer__wrapper{
-    width: 96vw;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-.footer__connectInfo{
-    text-align: flex-end;
-    margin-top: 27px;
-    color:white;
-}
+:root{
+    margin:0 auto;   
+    font-family: 'PT Astra Sans',Arial; 
+    color:  #163E6C;   
+  }
+  
+  .Button button  { 
+  margin: 10px 10px;
+  padding: 10px 15px;
+  line-height: 28px;
+  border: 10 px;
+  border-radius: 9px;
+  width: 100%;
+  border: 2px solid  #6c757d;
+  font-size: 1.2em;
+  color:  #163E6C; 
+  background: #EBE6D6;
+  transition: 0.3s;
+  }
 

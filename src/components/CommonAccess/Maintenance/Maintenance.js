@@ -69,7 +69,7 @@ class Maintenance  extends React.Component {
 
   columns = [
    // { title: '', field: 'checkbox', align: 'center', headerSort: false, formatter: 'rowSelection' },
-    { title: "ID", field: "id",width: 250 },
+    { title: "ID", field: "id",width: 150 },
     { title: "Машина", field: "car", width: 250, headerFilter: "input", },
     { title: "Сервисная организация", field: "service_company", width: 250, headerFilter: "input",  },
     { title: "Вид ТО", field: "type_maintenance", width: 250, headerFilter: "input",},
@@ -159,10 +159,12 @@ class Maintenance  extends React.Component {
           {(this.state.in_detail)&&
          <MaintenanceForm in_detail={this.briefly} item={this.state.selectedId} mode={this.state.mode} 
          formmode={this.props.formmode} car={this.props.car} /> 
-          }           
-        {(!this.state.in_detail)&&
-        <button onClick={this.create}>Добавить</button>
-  }
+          }  
+          <label className='Button'>
+             {(!this.state.in_detail)&&
+        <button onClick={this.create}>Добавить</button>  }
+            </label>         
+       
 
       </div>
     );

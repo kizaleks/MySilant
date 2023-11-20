@@ -148,10 +148,12 @@ to_and_complaints= () =>{
         } 
           {(this.state.in_detail=="look_car")&&
          <FullDateForm in_detail={this.briefly} item={this.state.selectedId} mode={this.state.mode}/> 
-          }           
-        {(this.state.in_detail=="table"&&localStorage.getItem('сategory')=="Менеджер")&&
-        <button onClick={this.create}>Добавить</button>
-  }
+          }   
+          <label className='Button'>
+                 {(this.state.in_detail=="table"&&localStorage.getItem('сategory')=="Менеджер")&&
+        <button onClick={this.create}>Добавить</button>  } 
+            </label>        
+  
         {(this.state.in_detail=="info_car")&&
          <TO_and_complaint in_detail={this.briefly} car={this.state.selectedId} mode={this.state.mode}
          factory_number={this.state.factory_number}/> 

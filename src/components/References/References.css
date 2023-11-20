@@ -1,70 +1,55 @@
-.References{
-  margin:0 auto;
- 
+:root{
+  margin:0 auto;   
   font-family: 'PT Astra Sans',Arial; 
-  color:  #163E6C; 
+  color:  #163E6C;   
 }
 
-
-.References form{   
-  border-radius: 9px;
-  border: 2px solid #EBE6D6    
-}
-.References button {
-  width:100%;
+.Button button  { 
+width: 100%;
 margin: 10px 10px;
 padding: 10px 15px;
 line-height: 28px;
 border: 10 px;
 border-radius: 9px;
-border: 2px solid black;
+border: 2px solid  #6c757d;
 font-size: 1.2em;
-color: #163E6C;
+color:  #163E6C; 
 background: #EBE6D6;
 transition: 0.3s;
 }
 
-.References select {
-  margin: 10px 10px;
+.References label { 
+  margin: 10px 10px; 
   padding: 10px 15px;
   line-height: 28px;
-  border: 10 px;
-  border-radius: 9px;
-  border: 2px solid black;
   font-size: 1.2em;
   color: #163E6C;
-  background: white;
-  transition: 0.3s;
-}
-.References text{    
-  border: none;
-  margin: 10px 10px;
-  padding: 10px 15px;
-  line-height: 28px;
-  border-radius: 9px;
-  border: 2px solid #163E6C;
-  font-size: 1.2em;
-  color: #163E6C;
-  background: #EBE6D6;
-  transition: 0.3s;
-
-}
-
-.References input {    
-  margin: 10px 10px;
-  padding: 10px 15px;
-  line-height: 28px;
-  border: 2;
-  border-radius: 9px;
-  border: 2px solid black;
-  font-size: 1.2em;
-  color: #163E6C;
-  background: #EBE6D6;
-  transition: 0.3s;
 } 
-@media screen and (max-width: 750px) {
-  .References{
-      font-size: 14px;
-      line-height: 15px; 
-  }  
+
+@media (min-width: 1537px) and (max-width: 1920px)  {
+  .References label {
+    font-size: 1.4em; 
+  }
+}
+@media (min-width: 1441px) and (max-width: 1536px)  {
+  .References label  {
+    font-size: 1.2em;      
+  }
+}
+@media (min-width: 1367px) and (max-width: 1440px)  {
+  .References label  {
+    font-size: 1.2em;      
+
+  }
+}
+@media (min-width: 360px) and (max-width: 1366px) {
+  .References label  {
+    font-size: 1em;     
+
+    }
+}
+@media screen and (max-width:360px) {
+  .References label  {
+    font-size: 0.8em;       
+  }
 }

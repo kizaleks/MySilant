@@ -181,11 +181,11 @@ const MaintenanceForm = (props) => {
   });
 };
 //return (value.id!=service_company)&& (<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>)
-   return (
-    <main className='MaintenanceForm'>
+   return (    
       <div className='MaintenanceForm'>    
-      <form> 
-      <text>Машина</text>
+      <form>
+      <label className='group1'>
+      <text >Машина</text>
        
         <select size="1" disabled ={modecar} onChange={e=>setcar(e.target.value)}  >
         {(props.mode=="new"&&props.formmode=="full")&&
@@ -194,6 +194,9 @@ const MaintenanceForm = (props) => {
         return (value.id!=car)&&(<option value={value.id}>{value.factory_number}</option>)||(<option defaultValue={value.id}>{value.factory_number}</option>) 
 })}
    </select>
+   </label> 
+   <label className='group2'></label> 
+   <label className='group3'>
         <text>Сервисная организация</text>
         <select size="1" disabled ={modecompany} onChange={e=>setservice_company(e.target.value)}  >
         {(props.mode=="new")&&
@@ -202,6 +205,9 @@ const MaintenanceForm = (props) => {
         return (value.id!=service_company)&& (<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>) 
 })}
    </select>
+   </label> 
+   <label className='group4'></label> 
+   <label className='group5'>
         <text>Вид ТО</text>
         <select size="1" disabled ={mode} onChange={e=>settype_maintenance(e.target.value)}  >
         {(props.mode=="new")&&
@@ -209,23 +215,40 @@ const MaintenanceForm = (props) => {
         {type_maintenance_spr.map(value =>{         
         return (value.id!=type_maintenance)&&(<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>) 
 })}</select>
+</label> 
+<label className='group6'></label>
+<label className='group7'>  
         <text>Дата проведения ТО</text>       
         <input type='date' readOnly={mode} defaultValue={maintenance_date} onChange={e=>setmaintenance_date(e.target.value)} ></input>
+        </label>
+        <label className='group8'></label> 
+        <label className='group9'>
         <text>Наработка м/час</text>       
         <input type='text' readOnly={mode} defaultValue={operating_time} onChange={e=>setoperating_time(e.target.value)} ></input>
-        
+        </label> 
+        <label className='group10'></label>
+        <label className='group11'> 
         <text>Номер заказа-наряда </text>       
         <input type='text' readOnly={mode} defaultValue={order} onChange={e=>setorder(e.target.value)} ></input>
+        </label> 
+        <label className='group12'></label> 
+        <label className='group13'>
         <text>Дата заказа-наряда</text>       
         <input type='date' readOnly={mode} defaultValue={order_date} onChange={e=>setorder_date(e.target.value)} ></input>
+       </label> 
+       <label className='group14'></label> 
+       <label className='group15'> 
         <text>Компания исполнитель</text>       
         <input type='text' readOnly={mode} defaultValue={company_executor} onChange={e=>setcompany_executor(e.target.value)} ></input>
-
+</label>
     </form>
         <br></br>
+        <label className='Button1'>
         {(mode=="readOnly")&&
         <button type="button" onClick={editmode}>Редактировать</button>    
         }
+        </label>
+        <label className='Button2'>
         {(mode!="readOnly")&&
         <button type="button" onClick={save}>Сохранить</button>    
         }
@@ -233,11 +256,11 @@ const MaintenanceForm = (props) => {
         <button type="button" onClick={deleteid}>Удалить</button>    
         }
         <button type="button" onClick={setClose}>Закрыть</button>
-     
+     </label>
       <br></br>
     
       </div> 
-    </main>
+   
   )
 }
 
