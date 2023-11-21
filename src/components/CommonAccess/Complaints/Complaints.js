@@ -68,7 +68,7 @@ class Complaints extends React.Component{
     this.setState({ in_detail: false });
     this.setState({ loding: false });   
   };
-
+ 
   columns = [
    // { title: '', field: 'checkbox', align: 'center', headerSort: false, formatter: 'rowSelection' },
     { title: "ID", field: "id",width: 150 },
@@ -139,19 +139,16 @@ class Complaints extends React.Component{
   render() {
     const options = {
       height: 300,
-     width:500,
-      movableRows: true,
-      selectable: 1,
-      //rowClick,
-      layout:"fitData",
-    movableRows:true,
-
-      //responsiveLayout: false,
+      width:500,
       //movableRows: true,
-      selectable: true,
+      //selectable: true,
+      
+
       rowClick: (e, row) => {
-        console.log("clicked");
-        this.setState({ selectedId: "row._cell" });
+        const id =row.getData().id; 
+    this.setState({ selectedId: id});
+    this.setState({ mode: "edit" }) 
+    this.setState({ in_detail: true })       
       },      
     };
     return (
