@@ -41,18 +41,15 @@ Frontend
 Для авторизации можно использовать 
 {
   МЕНЕДЖЕР
-  "login": "manager",
-  "password": "1qazXSW@"
+  manager
+  1qazXSW@
 
-  ПРЕДСТАВИТЕЛЬ СЕРВИСНОЙ ОРГАНИЗАЦИИ
-  "ООО Промышленная техника"
-   "login": "service",
-  "password": "1qazXSW@"
-  КЛИЕНТ 
-  "ИП Трудников С.В."
-   "login": "client1",
-  "password": "1qazXSW@"
-
+  ПРЕДСТАВИТЕЛЬ СЕРВИСНОЙ ОРГАНИЗАЦИИ  
+   service
+  1qazXSW@
+  КЛИЕНТ  
+   client1
+   1qazXSW@
   Для входа в админ панель Джанго
    "login": "admin",
   "password": "admin"
