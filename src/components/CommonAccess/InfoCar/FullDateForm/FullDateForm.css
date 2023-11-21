@@ -1,477 +1,478 @@
- :root{
-    margin:0 auto;  
-    font-family: 'PT Astra Sans',Arial; 
-    color:  #163E6C;   
+:root{
+  margin:0 auto;  
+  font-family: 'PT Astra Sans',Arial; 
+  color:  #163E6C;  
+  width:auto;
 
 } 
 
 .Button button  { 
-  width: 100%;
-  margin: 10px 10px;
-  padding: 10px 15px;
-  line-height: 28px;
-  border: 10 px;
-  border-radius: 9px;
-  border: 2px solid  #6c757d;
-  font-size: 1.2em;
-  color:  #163E6C; 
-  background: #EBE6D6;
-  transition: 0.3s;
-  }
+width: 100%;
+margin: 10px 10px;
+padding: 10px 15px;
+line-height: 28px;
+border: 10 px;
+border-radius: 9px;
+border: 2px solid  #6c757d;
+font-size: 1.2em;
+color:  #163E6C; 
+background: #EBE6D6;
+transition: 0.3s;
+}
 
 .FullDateForm button { 
+margin: 10px 10px;
+padding: 10px 15px;
+line-height: 28px;
+border: 10 px;
+border-radius: 9px;
+border: 2px solid #6c757d;
+font-size: 1.2em;
+color: #163E6C;
+background: #EBE6D6;
+transition: 0.3s;
+}
+
+.FullDateForm select {
   margin: 10px 10px;
   padding: 10px 15px;
   line-height: 28px;
   border: 10 px;
   border-radius: 9px;
   border: 2px solid #6c757d;
+  color: #163E6C;
+  
+  font-size: 1.2em;
+ /*color: #163E6C;*/
+  background: white;
+  transition: 0.3s;
+}
+.FullDateForm text{    
+  border: none;
+  margin: 10px 10px;
+  padding: 10px 15px;
+  line-height: 28px;
+  border-radius: 9px;
+  border: 2px solid #6c757d;
   font-size: 1.2em;
   color: #163E6C;
   background: #EBE6D6;
   transition: 0.3s;
+
 }
 
-.FullDateForm select {
-    margin: 10px 10px;
-    padding: 10px 15px;
-    line-height: 28px;
-    border: 10 px;
-    border-radius: 9px;
-    border: 2px solid #6c757d;
-    color: #163E6C;
-    
-    font-size: 1.2em;
-   /*color: #163E6C;*/
-    background: white;
-    transition: 0.3s;
-  }
-  .FullDateForm text{    
-    border: none;
-    margin: 10px 10px;
-    padding: 10px 15px;
-    line-height: 28px;
-    border-radius: 9px;
-    border: 2px solid #6c757d;
-    font-size: 1.2em;
-    color: #163E6C;
-    background: #EBE6D6;
-    transition: 0.3s;
+.FullDateForm input {    
+  margin: 10px 10px;
+  padding: 10px 15px;
+  line-height: 28px;
+  border: 2;
+  border-radius: 9px;
+  border: 2px solid #6c757d;
+  font-size: 1.2em;
+  color: #163E6C;
+  background: white;
+  transition: 0.3s;
+} 
 
-  }
-
-  .FullDateForm input {    
-    margin: 10px 10px;
-    padding: 10px 15px;
-    line-height: 28px;
-    border: 2;
-    border-radius: 9px;
-    border: 2px solid black;
-    font-size: 1.2em;
-    color: #163E6C;
-    background: white;
-    transition: 0.3s;
-  } 
-  
 
 
 
 @media (min-width: 1537px) and (max-width: 1920px)  {
-  .FullDateForm form .group1 text, .FullDateForm form .group1 input{       
-    font-size: 1.2em;      
-    width: calc(100% / 6 - 22px); 
-      }
-   .FullDateForm form .group3 text, .FullDateForm form .group3 select{    
-    font-size: 1.2em;   
-    width: calc(100% / 6 - 22px);   
-      }
-  .FullDateForm form .group5 text, .FullDateForm form .group5 select{     
-    font-size: 1.2em;     
-    width: calc(100% / 6 - 22px); 
-    
-      }
-  .FullDateForm form .group7 text , .FullDateForm form .group7 input{ 
-    font-size: 1.2em;     
-    width: calc(100% / 6 - 22px); 
-      }
-  .FullDateForm form .group9 text, .FullDateForm form .group9 select{   
-    font-size: 1.2em;     
-    width: calc(100% / 6 - 22px); 
-      }
-  .FullDateForm form .group11 text, .FullDateForm form .group11 input{ 
-    font-size: 1.2em;   
-    width: calc(100% / 6 - 22px); 
-      }
-  .FullDateForm form .group13 text, .FullDateForm form .group13 select{ 
-    font-size: 1.2em;    
-      width: 10%;
-      }
-  .FullDateForm form .group15 text, .FullDateForm form .group15 input{ 
-    font-size: 1.2em;     
-      width: 10%;
-      }
-  .FullDateForm form .group17 text , .FullDateForm form .group17 select{ 
-    font-size: 1.2em;    
-      width: 10%;
-      }
-  .FullDateForm form .group19 text, .FullDateForm form .group19 input { 
-    font-size: 1.2em;    
-      width: 10%;
-      }
-  .FullDateForm form .group21 text, .FullDateForm form .group21 input{ 
-    font-size: 1.2em;     
-      width: 10%;
-      }
-  .FullDateForm form .group23 text, .FullDateForm form .group23 input{ 
-    font-size: 1.2em;    
-      width: 10%;
-      }
-  .FullDateForm form .group25 text, .FullDateForm form .group25 input{ 
+.FullDateForm form .cargroup1 text, .FullDateForm form .cargroup1 input{       
+  font-size: 1.2em;      
+  width: calc(100% / 6 - 22px); 
+    }
+ .FullDateForm form .cargroup3 text, .FullDateForm form .cargroup3 select{    
+  font-size: 1.2em;   
+  width: calc(100% / 6 - 22px);   
+    }
+.FullDateForm form .cargroup5 text, .FullDateForm form .cargroup5 select{     
+  font-size: 1.2em;     
+  width: calc(100% / 6 - 22px); 
+  
+    }
+.FullDateForm form .cargroup7 text , .FullDateForm form .cargroup7 input{ 
+  font-size: 1.2em;     
+  width: calc(100% / 6 - 22px); 
+    }
+.FullDateForm form .cargroup9 text, .FullDateForm form .cargroup9 select{   
+  font-size: 1.2em;     
+  width: calc(100% / 6 - 22px); 
+    }
+.FullDateForm form .cargroup11 text, .FullDateForm form .cargroup11 input{ 
+  font-size: 1.2em;   
+  width: calc(100% / 6 - 22px); 
+    }
+.FullDateForm form .cargroup13 text, .FullDateForm form .cargroup13 select{ 
+  font-size: 1.2em;    
+    width: 10%;
+    }
+.FullDateForm form .cargroup15 text, .FullDateForm form .cargroup15 input{ 
+  font-size: 1.2em;     
+    width: 10%;
+    }
+.FullDateForm form .cargroup17 text , .FullDateForm form .cargroup17 select{ 
+  font-size: 1.2em;    
+    width: 10%;
+    }
+.FullDateForm form .cargroup19 text, .FullDateForm form .cargroup19 input { 
+  font-size: 1.2em;    
+    width: 10%;
+    }
+.FullDateForm form .cargroup21 text, .FullDateForm form .cargroup21 input{ 
+  font-size: 1.2em;     
+    width: 10%;
+    }
+.FullDateForm form .cargroup23 text, .FullDateForm form .cargroup23 input{ 
+  font-size: 1.2em;    
+    width: 10%;
+    }
+.FullDateForm form .cargroup25 text, .FullDateForm form .cargroup25 input{ 
+  font-size: 1.2em;  
+    width: 10%;
+    }
+.FullDateForm form .cargroup27 text, .FullDateForm form .cargroup27 input{ 
+  font-size: 1.2em;    
+    width: 10%;
+    }
+.FullDateForm form .cargroup29 text, .FullDateForm form .cargroup29 input{ 
+  font-size: 1.2em;    
+    width: 10%;
+    }
+.FullDateForm form .cargroup31 text, .FullDateForm form .cargroup31 select{ 
+  font-size: 1.2em;   
+    width: 10%;
+    }
+.FullDateForm form .cargroup33 text, .FullDateForm form .cargroup33 select{ 
+  font-size: 1.2em;   
+    width: 10%;
+    }
+
+      .FullDateForm form .cargroup6,  .cargroup12, .cargroup18, .FullDateForm form  .cargroup24, .cargroup30 {           
+        display: block ;  
+        }            
+}
+@media (min-width: 1441px) and (max-width: 1536px)  {
+  .FullDateForm form .cargroup1 text, .FullDateForm form .cargroup1 input{      
     font-size: 1.2em;  
-      width: 10%;
+      width:  25%;
       }
-  .FullDateForm form .group27 text, .FullDateForm form .group27 input{ 
+   .FullDateForm form .cargroup3 text, .FullDateForm form .cargroup3 select{ 
     font-size: 1.2em;    
-      width: 10%;
+      width:  25%;
       }
-  .FullDateForm form .group29 text, .FullDateForm form .group29 input{ 
+  .FullDateForm form .cargroup5 text, .FullDateForm form .cargroup5 select{ 
+    font-size: 1.2em;   
+      width:  25%;
+      }
+  .FullDateForm form .cargroup7 text , .FullDateForm form .cargroup7 input{ 
+    font-size: 1.2em;      
+      width:  25%;
+      }
+  .FullDateForm form .cargroup9 text, .FullDateForm form .cargroup9 select{   
+    font-size: 1.2em;     
+      width:  25%;
+      }
+  .FullDateForm form .cargroup11 text, .FullDateForm form .cargroup11 input{ 
     font-size: 1.2em;    
-      width: 10%;
+      width:  25%;
       }
-  .FullDateForm form .group31 text, .FullDateForm form .group31 select{ 
-    font-size: 1.2em;   
-      width: 10%;
+  .FullDateForm form .cargroup13 text, .FullDateForm form .cargroup13 select{ 
+    font-size: 1.2em;    
+      width:  25%;
       }
-  .FullDateForm form .group33 text, .FullDateForm form .group33 select{ 
+  .FullDateForm form .cargroup15 text, .FullDateForm form .cargroup15 input{ 
+    font-size: 1.2em;     
+      width:  25%;
+      }
+  .FullDateForm form .cargroup17 text , .FullDateForm form .cargroup17 select{ 
+    font-size: 1.2em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup19 text, .FullDateForm form .cargroup19 input { 
+    font-size: 1.2em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup21 text, .FullDateForm form .cargroup21 input{ 
+    font-size: 1.2em;     
+      width:  25%;
+      }
+  .FullDateForm form .cargroup23 text, .FullDateForm form .cargroup23 input{ 
+    font-size: 1.2em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup25 text, .FullDateForm form .cargroup25 input{ 
+    font-size: 1.2em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup27 text, .FullDateForm form .cargroup27 input{ 
+    font-size: 1.2em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup29 text, .FullDateForm form .cargroup29 input{ 
+    font-size: 1.2em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup31 text, .FullDateForm form .cargroup31 select{ 
+    font-size: 1.2em;  
+      width:  25%;
+      }
+  .FullDateForm form .cargroup33 text, .FullDateForm form .cargroup33 select{ 
     font-size: 1.2em;   
-      width: 10%;
+      width: 25%;
       }
   
-        .FullDateForm form .group6,  .group12, .group18, .FullDateForm form  .group24, .group30 {           
+      .FullDateForm form .cargroup4, .cargroup8,  .cargroup12,  .cargroup16, .cargroup20 {           
+        display: block ;  
+        } 
+        .FullDateForm form  .cargroup24,  .cargroup28, .cargroup32 {           
           display: block ;  
           }            
   }
-  @media (min-width: 1441px) and (max-width: 1536px)  {
-    .FullDateForm form .group1 text, .FullDateForm form .group1 input{      
-      font-size: 1.2em;  
-        width:  25%;
-        }
-     .FullDateForm form .group3 text, .FullDateForm form .group3 select{ 
-      font-size: 1.2em;    
-        width:  25%;
-        }
-    .FullDateForm form .group5 text, .FullDateForm form .group5 select{ 
-      font-size: 1.2em;   
-        width:  25%;
-        }
-    .FullDateForm form .group7 text , .FullDateForm form .group7 input{ 
-      font-size: 1.2em;      
-        width:  25%;
-        }
-    .FullDateForm form .group9 text, .FullDateForm form .group9 select{   
-      font-size: 1.2em;     
-        width:  25%;
-        }
-    .FullDateForm form .group11 text, .FullDateForm form .group11 input{ 
-      font-size: 1.2em;    
-        width:  25%;
-        }
-    .FullDateForm form .group13 text, .FullDateForm form .group13 select{ 
-      font-size: 1.2em;    
-        width:  25%;
-        }
-    .FullDateForm form .group15 text, .FullDateForm form .group15 input{ 
-      font-size: 1.2em;     
-        width:  25%;
-        }
-    .FullDateForm form .group17 text , .FullDateForm form .group17 select{ 
-      font-size: 1.2em;    
-        width:  25%;
-        }
-    .FullDateForm form .group19 text, .FullDateForm form .group19 input { 
-      font-size: 1.2em;    
-        width:  25%;
-        }
-    .FullDateForm form .group21 text, .FullDateForm form .group21 input{ 
-      font-size: 1.2em;     
-        width:  25%;
-        }
-    .FullDateForm form .group23 text, .FullDateForm form .group23 input{ 
-      font-size: 1.2em;    
-        width:  25%;
-        }
-    .FullDateForm form .group25 text, .FullDateForm form .group25 input{ 
-      font-size: 1.2em;    
-        width:  25%;
-        }
-    .FullDateForm form .group27 text, .FullDateForm form .group27 input{ 
-      font-size: 1.2em;    
-        width:  25%;
-        }
-    .FullDateForm form .group29 text, .FullDateForm form .group29 input{ 
-      font-size: 1.2em;    
-        width:  25%;
-        }
-    .FullDateForm form .group31 text, .FullDateForm form .group31 select{ 
-      font-size: 1.2em;  
-        width:  25%;
-        }
-    .FullDateForm form .group33 text, .FullDateForm form .group33 select{ 
-      font-size: 1.2em;   
-        width: 25%;
-        }
-    
-        .FullDateForm form .group4, .group8,  .group12,  .group16, .group20 {           
-          display: block ;  
-          } 
-          .FullDateForm form  .group24,  .group28, .group32 {           
-            display: block ;  
-            }            
-    }
- @media (min-width: 1367px) and (max-width: 1440px)  {
-    .FullDateForm form .group1 text, .FullDateForm form .group1 input{       
-      font-size: 1em;    
-        width:  25%;
-        }
-     .FullDateForm form .group3 text, .FullDateForm form .group3 select{ 
-      font-size: 1em;     
-        width:  25%;
-        }
-    .FullDateForm form .group5 text, .FullDateForm form .group5 select{ 
-      font-size: 1em;     
-        width:  25%;
-        }
-    .FullDateForm form .group7 text , .FullDateForm form .group7 input{ 
-      font-size: 1em;     
-        width:  25%;
-        }
-    .FullDateForm form .group9 text, .FullDateForm form .group9 select{   
-      font-size: 1em;     
-        width:  25%;
-        }
-    .FullDateForm form .group11 text, .FullDateForm form .group11 input{ 
-      font-size: 1em;    
-        width:  25%;
-        }
-    .FullDateForm form .group13 text, .FullDateForm form .group13 select{ 
-      font-size: 1em;    
-        width:  25%;
-        }
-    .FullDateForm form .group15 text, .FullDateForm form .group15 input{ 
-      font-size: 1em;    
-        width:  25%;
-        }
-    .FullDateForm form .group17 text , .FullDateForm form .group17 select{ 
-      font-size: 1em;    
-        width:  25%;
-        }
-    .FullDateForm form .group19 text, .FullDateForm form .group19 input { 
-      font-size: 1em;    
-        width:  25%;
-        }
-    .FullDateForm form .group21 text, .FullDateForm form .group21 input{ 
-      font-size: 1em;    
-        width:  25%;
-        }
-    .FullDateForm form .group23 text, .FullDateForm form .group23 input{ 
-      font-size: 1em;    
-        width:  25%;
-        }
-    .FullDateForm form .group25 text, .FullDateForm form .group25 input{ 
-      font-size: 1em;    
-        width:  25%;
-        }
-    .FullDateForm form .group27 text, .FullDateForm form .group27 input{ 
-      font-size: 1em;    
-        width:  25%;
-        }
-    .FullDateForm form .group29 text, .FullDateForm form .group29 input{ 
-      font-size: 1em;    
-        width:  25%;
-        }
-    .FullDateForm form .group31 text, .FullDateForm form .group31 select{ 
-      font-size: 1em;  
-        width:  25%;
-        }
-    .FullDateForm form .group33 text, .FullDateForm form .group33 select{ 
-      font-size: 1em;    
-        width: 25%;
-        }
-    
-        .FullDateForm form .group4, .group8,  .group12,  .group16, .group20 {           
-          display: block ;  
-          } 
-          .FullDateForm form  .group24,  .group28, .group32 {           
-            display: block ;  
-            }            
-    }
-
- @media (min-width: 360px) and (max-width: 1366px) {
-.FullDateForm form .group1 text, .FullDateForm form .group1 input{  
-  font-size: 1em;    
-    width: 50%;
-    }
- .FullDateForm form .group3 text, .FullDateForm form .group3 select{   
-  font-size: 1em;     
-    width: 50%;
-    }
-.FullDateForm form .group5 text, .FullDateForm form .group5 select{ 
-  font-size: 1em;     
-    width: 50%;
-    }
-.FullDateForm form .group7 text , .FullDateForm form .group7 input{ 
-  font-size: 1em;     
-    width: 50%;
-    }
-.FullDateForm form .group9 text, .FullDateForm form .group9 select{   
-  font-size: 1em;     
-    width: 50%;
-    }
-.FullDateForm form .group11 text, .FullDateForm form .group11 input{ 
-  font-size: 1em;    
-    width: 50%;
-    }
-.FullDateForm form .group13 text, .FullDateForm form .group13 select{ 
-  font-size: 1em;    
-    width: 50%;
-    }
-.FullDateForm form .group15 text, .FullDateForm form .group15 input{ 
-  font-size: 1em;    
-    width: 50%;
-    }
-.FullDateForm form .group17 text , .FullDateForm form .group17 select{ 
-  font-size: 1em;    
-    width: 50%;
-    }
-.FullDateForm form .group19 text, .FullDateForm form .group19 input { 
-  font-size: 1em;    
-    width: 50%;
-    }
-.FullDateForm form .group21 text, .FullDateForm form .group21 input{ 
-  font-size: 1em;    
-    width: 50%;
-    }
-.FullDateForm form .group23 text, .FullDateForm form .group23 input{ 
-  font-size: 1em;    
-    width: 50%;
-    }
-.FullDateForm form .group25 text, .FullDateForm form .group25 input{ 
-  font-size: 1em;    
-    width: 50%;
-    }
-.FullDateForm form .group27 text, .FullDateForm form .group27 input{ 
-  font-size: 1em;    
-    width: 50%;
-    }
-.FullDateForm form .group29 text, .FullDateForm form .group29 input{ 
-  font-size: 1em;    
-    width: 50%;
-    }
-.FullDateForm form .group31 text, .FullDateForm form .group31 select{ 
-  font-size: 1em;  
-    width: 50;
-    }
-.FullDateForm form .group33 text, .FullDateForm form .group33 select{ 
-  font-size: 1em;    
-    width: 50%;
-    }
-
-      .FullDateForm form .group2, .group4, .group6, .group8, .group10, .group12, .group14, .group16, .group18, .group20 {           
+@media (min-width: 1367px) and (max-width: 1440px)  {
+  .FullDateForm form .cargroup1 text, .FullDateForm form .cargroup1 input{       
+    font-size: 1em;    
+      width:  25%;
+      }
+   .FullDateForm form .cargroup3 text, .FullDateForm form .cargroup3 select{ 
+    font-size: 1em;     
+      width:  25%;
+      }
+  .FullDateForm form .cargroup5 text, .FullDateForm form .cargroup5 select{ 
+    font-size: 1em;     
+      width:  25%;
+      }
+  .FullDateForm form .cargroup7 text , .FullDateForm form .cargroup7 input{ 
+    font-size: 1em;     
+      width:  25%;
+      }
+  .FullDateForm form .cargroup9 text, .FullDateForm form .cargroup9 select{   
+    font-size: 1em;     
+      width:  25%;
+      }
+  .FullDateForm form .cargroup11 text, .FullDateForm form .cargroup11 input{ 
+    font-size: 1em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup13 text, .FullDateForm form .cargroup13 select{ 
+    font-size: 1em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup15 text, .FullDateForm form .cargroup15 input{ 
+    font-size: 1em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup17 text , .FullDateForm form .cargroup17 select{ 
+    font-size: 1em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup19 text, .FullDateForm form .cargroup19 input { 
+    font-size: 1em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup21 text, .FullDateForm form .cargroup21 input{ 
+    font-size: 1em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup23 text, .FullDateForm form .cargroup23 input{ 
+    font-size: 1em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup25 text, .FullDateForm form .cargroup25 input{ 
+    font-size: 1em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup27 text, .FullDateForm form .cargroup27 input{ 
+    font-size: 1em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup29 text, .FullDateForm form .cargroup29 input{ 
+    font-size: 1em;    
+      width:  25%;
+      }
+  .FullDateForm form .cargroup31 text, .FullDateForm form .cargroup31 select{ 
+    font-size: 1em;  
+      width:  25%;
+      }
+  .FullDateForm form .cargroup33 text, .FullDateForm form .cargroup33 select{ 
+    font-size: 1em;    
+      width: 25%;
+      }
+  
+      .FullDateForm form .cargroup4, .cargroup8,  .cargroup12,  .cargroup16, .cargroup20 {           
         display: block ;  
         } 
-        .FullDateForm form .group22, .group24, .group26, .group28, .group30, .group32 {           
+        .FullDateForm form  .cargroup24,  .cargroup28, .cargroup32 {           
           display: block ;  
-          } 
+          }            
+  }
+
+@media (min-width: 360px) and (max-width: 1366px) {
+.FullDateForm form .cargroup1 text, .FullDateForm form .cargroup1 input{  
+font-size: 1em;    
+  width: 50%;
+  }
+.FullDateForm form .cargroup3 text, .FullDateForm form .cargroup3 select{   
+font-size: 1em;     
+  width: 50%;
+  }
+.FullDateForm form .cargroup5 text, .FullDateForm form .cargroup5 select{ 
+font-size: 1em;     
+  width: 50%;
+  }
+.FullDateForm form .cargroup7 text , .FullDateForm form .cargroup7 input{ 
+font-size: 1em;     
+  width: 50%;
+  }
+.FullDateForm form .cargroup9 text, .FullDateForm form .cargroup9 select{   
+font-size: 1em;     
+  width: 50%;
+  }
+.FullDateForm form .cargroup11 text, .FullDateForm form .cargroup11 input{ 
+font-size: 1em;    
+  width: 50%;
+  }
+.FullDateForm form .cargroup13 text, .FullDateForm form .cargroup13 select{ 
+font-size: 1em;    
+  width: 50%;
+  }
+.FullDateForm form .cargroup15 text, .FullDateForm form .cargroup15 input{ 
+font-size: 1em;    
+  width: 50%;
+  }
+.FullDateForm form .cargroup17 text , .FullDateForm form .cargroup17 select{ 
+font-size: 1em;    
+  width: 50%;
+  }
+.FullDateForm form .cargroup19 text, .FullDateForm form .cargroup19 input { 
+font-size: 1em;    
+  width: 50%;
+  }
+.FullDateForm form .cargroup21 text, .FullDateForm form .cargroup21 input{ 
+font-size: 1em;    
+  width: 50%;
+  }
+.FullDateForm form .cargroup23 text, .FullDateForm form .cargroup23 input{ 
+font-size: 1em;    
+  width: 50%;
+  }
+.FullDateForm form .cargroup25 text, .FullDateForm form .cargroup25 input{ 
+font-size: 1em;    
+  width: 50%;
+  }
+.FullDateForm form .cargroup27 text, .FullDateForm form .cargroup27 input{ 
+font-size: 1em;    
+  width: 50%;
+  }
+.FullDateForm form .cargroup29 text, .FullDateForm form .cargroup29 input{ 
+font-size: 1em;    
+  width: 50%;
+  }
+.FullDateForm form .cargroup31 text, .FullDateForm form .cargroup31 select{ 
+font-size: 1em;  
+  width: 50;
+  }
+.FullDateForm form .cargroup33 text, .FullDateForm form .cargroup33 select{ 
+font-size: 1em;    
+  width: 50%;
+  }
+
+    .FullDateForm form .cargroup2, .cargroup4, .cargroup6, .cargroup8, .cargroup10, .cargroup12, .cargroup14, .cargroup16, .cargroup18, .cargroup20 {           
+      display: block ;  
+      } 
+      .FullDateForm form .cargroup22, .cargroup24, .cargroup26, .cargroup28, .cargroup30, .cargroup32 {           
+        display: block ;  
+        } 
 }
 @media (max-width: 360px) {
-  .FullDateForm form .group1 text, .FullDateForm form .group1 input{  
-    display: block ;     
-    font-size: 0.8em;    
-      width: 50%;
-      }
-   .FullDateForm form .group3 text, .FullDateForm form .group3 select{   
-    display: block ;     
-    font-size: 0.8em;     
-      width: 50%;
-      }
-  .FullDateForm form .group5 text, .FullDateForm form .group5 select{ 
-    display: block ;     
-    font-size: 0.8em;      
-      width: 50%;
-      }
-  .FullDateForm form .group7 text , .FullDateForm form .group7 input{ 
-    display: block ;     
-    font-size: 0.8em;     
-      width: 50%;
-      }
-  .FullDateForm form .group9 text, .FullDateForm form .group9 select{   
-    display: block ;     
-    font-size: 0.8em;    
-      width: 50%;
-      }
-  .FullDateForm form .group11 text, .FullDateForm form .group11 input{ 
-    display: block ;     
-    font-size: 0.8em;   
-      width: 50%;
-      }
-  .FullDateForm form .group13 text, .FullDateForm form .group13 select{ 
-    display: block ;     
-    font-size: 0.8em;    
-      width: 50%;
-      }
-  .FullDateForm form .group15 text, .FullDateForm form .group15 input{ 
-    display: block ;     
-    font-size: 0.8em;    
-      width: 50%;
-      }
-  .FullDateForm form .group17 text , .FullDateForm form .group17 select{ 
-    display: block ;     
-    font-size: 0.8em;     
-      width: 50%;
-      }
-  .FullDateForm form .group19 text, .FullDateForm form .group19 input { 
-    display: block ;     
-    font-size: 0.8em;     
-      width: 50%;
-      }
-  .FullDateForm form .group21 text, .FullDateForm form .group21 input{ 
-    display: block ;     
-    font-size: 0.8em;    
-      width: 50%;
-      }
-  .FullDateForm form .group23 text, .FullDateForm form .group23 input{ 
-    display: block ;     
-    font-size: 0.8em;     
-      width: 50%;
-      }
-  .FullDateForm form .group25 text, .FullDateForm form .group25 input{ 
-    display: block ;     
-    font-size: 0.8em;   
-      width: 50%;
-      }
-  .FullDateForm form .group27 text, .FullDateForm form .group27 input{ 
-    display: block ;     
-    font-size: 0.8em;    
-      width: 50%;
-      }
-  .FullDateForm form .group29 text, .FullDateForm form .group29 input{ 
-    display: block ;     
-    font-size: 0.8em;   
-      width: 50%;
-      }
-  .FullDateForm form .group31 text, .FullDateForm form .group31 select{ 
-    display: block ;     
-    font-size: 0.8em; 
-      width: 50;
-      }
-  .FullDateForm form .group33 text, .FullDateForm form .group33 select{ 
-    display: block ;     
-    font-size: 0.8em;   
-      width: 50%;
-      }
-      
-      
-  }
+.FullDateForm form .cargroup1 text, .FullDateForm form .cargroup1 input{  
+  display: block ;     
+  font-size: 0.8em;    
+    width: 50%;
+    }
+ .FullDateForm form .cargroup3 text, .FullDateForm form .cargroup3 select{   
+  display: block ;     
+  font-size: 0.8em;     
+    width: 50%;
+    }
+.FullDateForm form .cargroup5 text, .FullDateForm form .cargroup5 select{ 
+  display: block ;     
+  font-size: 0.8em;      
+    width: 50%;
+    }
+.FullDateForm form .cargroup7 text , .FullDateForm form .cargroup7 input{ 
+  display: block ;     
+  font-size: 0.8em;     
+    width: 50%;
+    }
+.FullDateForm form .cargroup9 text, .FullDateForm form .cargroup9 select{   
+  display: block ;     
+  font-size: 0.8em;    
+    width: 50%;
+    }
+.FullDateForm form .cargroup11 text, .FullDateForm form .cargroup11 input{ 
+  display: block ;     
+  font-size: 0.8em;   
+    width: 50%;
+    }
+.FullDateForm form .cargroup13 text, .FullDateForm form .cargroup13 select{ 
+  display: block ;     
+  font-size: 0.8em;    
+    width: 50%;
+    }
+.FullDateForm form .cargroup15 text, .FullDateForm form .cargroup15 input{ 
+  display: block ;     
+  font-size: 0.8em;    
+    width: 50%;
+    }
+.FullDateForm form .cargroup17 text , .FullDateForm form .cargroup17 select{ 
+  display: block ;     
+  font-size: 0.8em;     
+    width: 50%;
+    }
+.FullDateForm form .cargroup19 text, .FullDateForm form .cargroup19 input { 
+  display: block ;     
+  font-size: 0.8em;     
+    width: 50%;
+    }
+.FullDateForm form .cargroup21 text, .FullDateForm form .cargroup21 input{ 
+  display: block ;     
+  font-size: 0.8em;    
+    width: 50%;
+    }
+.FullDateForm form .cargroup23 text, .FullDateForm form .cargroup23 input{ 
+  display: block ;     
+  font-size: 0.8em;     
+    width: 50%;
+    }
+.FullDateForm form .cargroup25 text, .FullDateForm form .cargroup25 input{ 
+  display: block ;     
+  font-size: 0.8em;   
+    width: 50%;
+    }
+.FullDateForm form .cargroup27 text, .FullDateForm form .cargroup27 input{ 
+  display: block ;     
+  font-size: 0.8em;    
+    width: 50%;
+    }
+.FullDateForm form .cargroup29 text, .FullDateForm form .cargroup29 input{ 
+  display: block ;     
+  font-size: 0.8em;   
+    width: 50%;
+    }
+.FullDateForm form .cargroup31 text, .FullDateForm form .cargroup31 select{ 
+  display: block ;     
+  font-size: 0.8em; 
+    width: 50;
+    }
+.FullDateForm form .cargroup33 text, .FullDateForm form .cargroup33 select{ 
+  display: block ;     
+  font-size: 0.8em;   
+    width: 50%;
+    }
+    
+    
+}
  
 
 

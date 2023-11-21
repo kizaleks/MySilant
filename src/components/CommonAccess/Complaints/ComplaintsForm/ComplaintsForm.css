@@ -2,7 +2,7 @@
   margin:0 auto;  
   font-family: 'PT Astra Sans',Arial; 
   color:  #163E6C;   
-
+  width:auto;
 }
 
 .Button1 button  { 
@@ -36,7 +36,7 @@ padding: 10px 15px;
 line-height: 28px;
 border: 10 px;
 border-radius: 9px;
-border: 2px solid black;
+border: 2px solid #6c757d;
 font-size: 1.2em;
 color: #163E6C;
 background: #EBE6D6;
@@ -48,7 +48,7 @@ background: #EBE6D6;
   line-height: 28px;
   border: 10 px;
   border-radius: 9px;
-  border: 2px solid black;
+  border: 2px solid #6c757d;
   color: #163E6C;
   
   font-size: 1.2em;
@@ -62,7 +62,7 @@ background: #EBE6D6;
   padding: 10px 15px;
   line-height: 28px;
   border-radius: 9px;
-  border: 2px solid #163E6C;
+  border: 2px solid #6c757d;
   font-size: 1.2em;
   color: #163E6C;
   background: #EBE6D6;
@@ -70,13 +70,13 @@ background: #EBE6D6;
 
 }
 
-.ComplaintsForm input {    
+.ComplaintsForm input {   
   margin: 10px 10px;
   padding: 10px 15px;
   line-height: 28px;
   border: 2;
   border-radius: 9px;
-  border: 2px solid black;
+  border: 2px solid #6c757d;
   font-size: 1.2em;
   color: #163E6C;
   background: white;
@@ -85,243 +85,243 @@ background: #EBE6D6;
 
 @media (min-width: 1537px) and (max-width: 1920px)  {
   
-.ComplaintsForm form .group1 text, .ComplaintsForm form .group1 input{ 
+.ComplaintsForm form .complaintsgroup1 text, .ComplaintsForm form .complaintsgroup1 input{ 
   font-size: 1.2em;      
-  width: 10%;
+  width: 18%;
     }
- .ComplaintsForm form .group3 text, .ComplaintsForm form .group3 input{    
+ .ComplaintsForm form .complaintsgroup3 text, .ComplaintsForm form .complaintsgroup3 input{    
   font-size: 1.2em;   
-  width: 10%;   
+  width: 18%;   
     }
-.ComplaintsForm form .group5 text, .ComplaintsForm form .group5 select{     
+.ComplaintsForm form .complaintsgroup5 text, .ComplaintsForm form .complaintsgroup5 select{     
   font-size: 1.2em;     
-  width: 10%; 
+  width: 18%; 
   
     }
-.ComplaintsForm form .group7 text , .ComplaintsForm form .group7 input{ 
+.ComplaintsForm form .complaintsgroup7 text , .ComplaintsForm form .complaintsgroup7 input{ 
   font-size: 1.2em;     
-  width: 10%;
+  width: 15%;
     }
-.ComplaintsForm form .group9 text, .ComplaintsForm form .group9 select{   
+.ComplaintsForm form .complaintsgroup9 text, .ComplaintsForm form .complaintsgroup9 select{   
   font-size: 1.2em;     
-  width: 10%;
+  width: 15%;
     }
-.ComplaintsForm form .group11 text, .ComplaintsForm form .group11 input{ 
+.ComplaintsForm form .complaintsgroup11 text, .ComplaintsForm form .complaintsgroup11 input{ 
   font-size: 1.2em;   
-  width: 10%; 
+  width: 15%; 
     }
-.ComplaintsForm form .group13 text, .ComplaintsForm form .group13 input{  
+.ComplaintsForm form .complaintsgroup13 text, .ComplaintsForm form .complaintsgroup13 input{  
   font-size: 1.2em;    
-    width: 10%;
+    width: 15%;
     }
-.ComplaintsForm form .group15 text, .ComplaintsForm form .group15 input{   
+.ComplaintsForm form .complaintsgroup15 text, .ComplaintsForm form .complaintsgroup15 input{   
   font-size: 1.2em;     
-    width: 10%;
+    width: 15%;
     }
-.ComplaintsForm form .group17 text , .ComplaintsForm form .group17 select{ 
+.ComplaintsForm form .complaintsgroup17 text , .ComplaintsForm form .complaintsgroup17 select{ 
   font-size: 1.2em;    
-    width: 10%;
+    width: 15%;
     }
-.ComplaintsForm form .group19 text, .ComplaintsForm form .group19 select { 
+.ComplaintsForm form .complaintsgroup19 text, .ComplaintsForm form .complaintsgroup19 select { 
   font-size: 1.2em;    
-    width: 10%;
+    width: 15%;
     }
 
-      .ComplaintsForm form .group6,  .group10, .group14 {           
+      .ComplaintsForm form .complaintsgroup6,  .complaintsgroup10, .complaintsgroup14 {           
         display: block ;  
         }            
 }
 @media (min-width: 1441px) and (max-width: 1536px)  {
-  .ComplaintsForm form .group1 text, .ComplaintsForm form .group1 input{       
+  .ComplaintsForm form .complaintsgroup1 text, .ComplaintsForm form .complaintsgroup1 input{       
        font-size: 1.2em;  
         width:  25%; 
       }
-   .ComplaintsForm form .group3 text, .ComplaintsForm form .group3 input{    
+   .ComplaintsForm form .complaintsgroup3 text, .ComplaintsForm form .complaintsgroup3 input{    
     font-size: 1.2em;  
     width:  25%;  
       }
-  .ComplaintsForm form .group5 text, .ComplaintsForm form .group5 select{     
+  .ComplaintsForm form .complaintsgroup5 text, .ComplaintsForm form .complaintsgroup5 select{     
     font-size: 1.2em;  
     width:  25%;
     
       }
-  .ComplaintsForm form .group7 text , .ComplaintsForm form .group7 input{ 
+  .ComplaintsForm form .complaintsgroup7 text , .ComplaintsForm form .complaintsgroup7 input{ 
     font-size: 1.2em;  
         width:  25%; 
       }
-  .ComplaintsForm form .group9 text, .ComplaintsForm form .group9 select{   
+  .ComplaintsForm form .complaintsgroup9 text, .ComplaintsForm form .complaintsgroup9 select{   
     font-size: 1.2em;  
     width:  25%;
       }
-  .ComplaintsForm form .group11 text, .ComplaintsForm form .group11 input{ 
+  .ComplaintsForm form .complaintsgroup11 text, .ComplaintsForm form .complaintsgroup11 input{ 
     font-size: 1.2em;  
         width:  25%;
       }
-  .ComplaintsForm form .group13 text, .ComplaintsForm form .group13 input{   
+  .ComplaintsForm form .complaintsgroup13 text, .ComplaintsForm form .complaintsgroup13 input{   
     font-size: 1.2em;  
     width:  20%;
       }
-  .ComplaintsForm form .group15 text, .ComplaintsForm form .group15 input{    
+  .ComplaintsForm form .complaintsgroup15 text, .ComplaintsForm form .complaintsgroup15 input{    
     font-size: 1.2em;  
         width:  20%;
       }
-  .ComplaintsForm form .group17 text , .ComplaintsForm form .group17 select{ 
+  .ComplaintsForm form .complaintsgroup17 text , .ComplaintsForm form .complaintsgroup17 select{ 
     font-size: 1.2em;  
         width:  25%;
       }
-  .ComplaintsForm form .group19 text, .ComplaintsForm form .group19 select { 
+  .ComplaintsForm form .complaintsgroup19 text, .ComplaintsForm form .complaintsgroup19 select { 
     font-size: 1.2em;  
         width:  25%;
       }
   
-        .ComplaintsForm form .group4, .group8,  .group12,  .group18 {           
+        .ComplaintsForm form .complaintsgroup4, .complaintsgroup8,  .complaintsgroup12,  .complaintsgroup18 {           
           display: block ;  
           }      
   }
 @media (min-width: 1367px) and (max-width: 1440px)  {
-  .ComplaintsForm form .group1 text, .ComplaintsForm form .group1 input{       
+  .ComplaintsForm form .complaintsgroup1 text, .ComplaintsForm form .complaintsgroup1 input{       
     font-size: 1em;    
     width:  25%; 
    }
-.ComplaintsForm form .group3 text, .ComplaintsForm form .group3 input{    
+.ComplaintsForm form .complaintsgroup3 text, .ComplaintsForm form .complaintsgroup3 input{    
   font-size: 1em;    
   width:  25%;  
    }
-.ComplaintsForm form .group5 text, .ComplaintsForm form .group5 select{     
+.ComplaintsForm form .complaintsgroup5 text, .ComplaintsForm form .complaintsgroup5 select{     
   font-size: 1em;    
   width:  25%;
  
    }
-.ComplaintsForm form .group7 text , .ComplaintsForm form .group7 input{ 
+.ComplaintsForm form .complaintsgroup7 text , .ComplaintsForm form .complaintsgroup7 input{ 
   font-size: 1em;    
   width:  25%;
    }
-.ComplaintsForm form .group9 text, .ComplaintsForm form .group9 select{   
+.ComplaintsForm form .complaintsgroup9 text, .ComplaintsForm form .complaintsgroup9 select{   
   font-size: 1em;    
   width:  25%;
    }
-.ComplaintsForm form .group11 text, .ComplaintsForm form .group11 input{ 
+.ComplaintsForm form .complaintsgroup11 text, .ComplaintsForm form .complaintsgroup11 input{ 
   font-size: 1em;    
   width:  25%;
    }
-.ComplaintsForm form .group13 text, .ComplaintsForm form .group13 input{   
+.ComplaintsForm form .complaintsgroup13 text, .ComplaintsForm form .complaintsgroup13 input{   
   font-size: 1em;    
   width:  25%;
    }
-.ComplaintsForm form .group15 text, .ComplaintsForm form .group15 input{    
+.ComplaintsForm form .complaintsgroup15 text, .ComplaintsForm form .complaintsgroup15 input{    
   font-size: 1em;    
   width:  25%;
    }
-.ComplaintsForm form .group17 text , .ComplaintsForm form .group17 select{ 
+.ComplaintsForm form .complaintsgroup17 text , .ComplaintsForm form .complaintsgroup17 select{ 
   font-size: 1em;    
   width:  25%;
    }
-.ComplaintsForm form .group19 text, .ComplaintsForm form .group19 select { 
+.ComplaintsForm form .complaintsgroup19 text, .ComplaintsForm form .complaintsgroup19 select { 
   font-size: 1em;    
   width:  25%;
    }
 
-     .ComplaintsForm form .group4, .group8,  .group12,  .group16 {           
+     .ComplaintsForm form .complaintsgroup4, .complaintsgroup8,  .complaintsgroup12,  .complaintsgroup16 {           
        display: block ;  
        }  
           
   }
 
 @media (min-width: 361px) and (max-width: 1366px) {
-  .ComplaintsForm form .group1 text, .ComplaintsForm form .group1 input{       
+  .ComplaintsForm form .complaintsgroup1 text, .ComplaintsForm form .complaintsgroup1 input{       
     font-size: 1em;    
     width: 50%;
    }
-.ComplaintsForm form .group3 text, .ComplaintsForm form .group3 input{    
+.ComplaintsForm form .complaintsgroup3 text, .ComplaintsForm form .complaintsgroup3 input{    
   font-size: 1em;    
   width: 50%; 
    }
-.ComplaintsForm form .group5 text, .ComplaintsForm form .group5 select{     
+.ComplaintsForm form .complaintsgroup5 text, .ComplaintsForm form .complaintsgroup5 select{     
   font-size: 1em;    
   width: 50%;
  
    }
-.ComplaintsForm form .group7 text , .ComplaintsForm form .group7 input{ 
+.ComplaintsForm form .complaintsgroup7 text , .ComplaintsForm form .complaintsgroup7 input{ 
   font-size: 1em;    
   width: 50%;
    }
-.ComplaintsForm form .group9 text, .ComplaintsForm form .group9 select{   
+.ComplaintsForm form .complaintsgroup9 text, .ComplaintsForm form .complaintsgroup9 select{   
   font-size: 1em;    
     width: 50%;
    }
-.ComplaintsForm form .group11 text, .ComplaintsForm form .group11 input{ 
+.ComplaintsForm form .complaintsgroup11 text, .ComplaintsForm form .complaintsgroup11 input{ 
   font-size: 1em;    
     width: 50%;
    }
-.ComplaintsForm form .group13 text, .ComplaintsForm form .group13 input{   
+.ComplaintsForm form .complaintsgroup13 text, .ComplaintsForm form .complaintsgroup13 input{   
   font-size: 1em;    
   width: 50%;
    }
-.ComplaintsForm form .group15 text, .ComplaintsForm form .group15 input{    
+.ComplaintsForm form .complaintsgroup15 text, .ComplaintsForm form .complaintsgroup15 input{    
   font-size: 1em;    
   width: 50%;
    }
-.ComplaintsForm form .group17 text , .ComplaintsForm form .group17 select{ 
+.ComplaintsForm form .complaintsgroup17 text , .ComplaintsForm form .complaintsgroup17 select{ 
   font-size: 1em;    
     width: 50%;
    }
-.ComplaintsForm form .group19 text, .ComplaintsForm form .group19 select { 
+.ComplaintsForm form .complaintsgroup19 text, .ComplaintsForm form .complaintsgroup19 select { 
   font-size: 1em;    
     width: 50%;
    }
 
-     .ComplaintsForm form .group2, .group4, .group6, .group8, .group10, .group12, .group14, .group16, .group18 {           
+     .ComplaintsForm form .complaintsgroup2, .complaintsgroup4, .complaintsgroup6, .complaintsgroup8, .complaintsgroup10, .complaintsgroup12, .complaintsgroup14, .complaintsgroup16, .complaintsgroup18 {           
        display: block ;  
        }
 }
 @media (max-width: 360px) {
-  .ComplaintsForm form .group1 text, .ComplaintsForm form .group1 input{       
+  .ComplaintsForm form .complaintsgroup1 text, .ComplaintsForm form .complaintsgroup1 input{       
     display: block ;     
     font-size: 0.8em;    
       width: 50%;
    }
-.ComplaintsForm form .group3 text, .ComplaintsForm form .group3 input{    
+.ComplaintsForm form .complaintsgroup3 text, .ComplaintsForm form .complaintsgroup3 input{    
   display: block ;     
     font-size: 0.8em;    
       width: 50%;
    }
-.ComplaintsForm form .group5 text, .ComplaintsForm form .group5 select{     
+.ComplaintsForm form .complaintsgroup5 text, .ComplaintsForm form .complaintsgroup5 select{     
   display: block ;     
   font-size: 0.8em;    
     width: 50%;
  
    }
-.ComplaintsForm form .group7 text , .ComplaintsForm form .group7 input{ 
+.ComplaintsForm form .complaintsgroup7 text , .ComplaintsForm form .complaintsgroup7 input{ 
   display: block ;     
     font-size: 0.8em;    
       width: 50%;
    }
-.ComplaintsForm form .group9 text, .ComplaintsForm form .group9 select{   
+.ComplaintsForm form .complaintsgroup9 text, .ComplaintsForm form .complaintsgroup9 select{   
   display: block ;     
     font-size: 0.8em;    
       width: 50%;
    }
-.ComplaintsForm form .group11 text, .ComplaintsForm form .group11 input{ 
+.ComplaintsForm form .complaintsgroup11 text, .ComplaintsForm form .complaintsgroup11 input{ 
   display: block ;     
     font-size: 0.8em;    
       width: 50%;
    }
-.ComplaintsForm form .group13 text, .ComplaintsForm form .group13 input{   
+.ComplaintsForm form .complaintsgroup13 text, .ComplaintsForm form .complaintsgroup13 input{   
   display: block ;     
     font-size: 0.8em;    
       width: 50%;
    }
-.ComplaintsForm form .group15 text, .ComplaintsForm form .group15 input{    
+.ComplaintsForm form .complaintsgroup15 text, .ComplaintsForm form .complaintsgroup15 input{    
   display: block ;     
     font-size: 0.8em;    
       width: 50%;
    }
-.ComplaintsForm form .group17 text , .ComplaintsForm form .group17 select{ 
+.ComplaintsForm form .complaintsgroup17 text , .ComplaintsForm form .complaintsgroup17 select{ 
   display: block ;     
   font-size: 0.8em;    
     width: 50%;
    }
-.ComplaintsForm form .group19 text, .ComplaintsForm form .group19 select { 
+.ComplaintsForm form .complaintsgroup19 text, .ComplaintsForm form .complaintsgroup19 select { 
   display: block ;     
   font-size: 0.8em;    
     width: 50%;

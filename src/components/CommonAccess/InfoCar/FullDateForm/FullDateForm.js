@@ -243,16 +243,15 @@ useEffect(() => {
 },[props.item]);
 
    return (
-    
-      <div className='FullDateForm' >     
+    <div className='FullDateForm' >     
       <form> 
       <h1>Информация по машине</h1>
-      <label className='group1'>
+      <label className='cargroup1'>
         <text >Заводской номер</text>       
         <input type='text' readOnly={mode} defaultValue={factory_number} onChange={e=>setfactory_number(e.target.value)} ></input>
         </label>
-        <label className='group2' ></label>
-        <label className='group3'>
+        <label className='cargroup2' ></label>
+        <label className='cargroup3'>
          <text>Модель техники</text>
         <select size="1" disabled ={mode} onChange={e=>settechnique_model(e.target.value)}  >
         {(props.mode=="new")&&
@@ -262,8 +261,8 @@ useEffect(() => {
 })}
    </select>
         </label>
-        <label className='group4' ></label>
-        <label className='group5'>
+        <label className='cargroup4' ></label>
+        <label className='cargroup5'>
         <text>Модель двигателя</text>
         <select size="1" disabled ={mode} onChange={e=>setengine_model(e.target.value)}  >
         {(props.mode=="new")&&
@@ -273,13 +272,13 @@ useEffect(() => {
 })}
    </select>
    </label>
-   <label className='group6' ></label>
-   <label className='group7' >
+   <label className='cargroup6' ></label>
+   <label className='cargroup7' >
         <text>Номер двигателя</text>
         <input type='text' readOnly={mode} defaultValue={engine_number} onChange={e=>setengine_number(e.target.value)} ></input>
         </label>
-        <label className='group8' ></label>
-   <label className='group9' >
+        <label className='cargroup8' ></label>
+   <label className='cargroup9' >
         <text>Модель трансмиссии</text>
         <select size="1" disabled ={mode} onChange={e=>settransmission_model(e.target.value)}  >
         {(props.mode=="new")&&
@@ -289,13 +288,13 @@ useEffect(() => {
 })}
    </select>
    </label>
-   <label className='group10' ></label>
-   <label className='group11' >
+   <label className='cargroup10' ></label>
+   <label className='cargroup11' >
         <text>Номер трансмиссии</text>
         <input type='text' readOnly={mode} defaultValue={transmission_number} onChange={e=>settransmission_number(e.target.value)} ></input>
        </label>
-       <label className='group12' ></label>
-   <label className='group13' >
+       <label className='cargroup12' ></label>
+   <label className='cargroup13' >
         <text>Модель ведущего моста</text>
         <select size="1" disabled ={mode} onChange={e=>setdrive_axle_model(e.target.value)}  >
         {(props.mode=="new")&&
@@ -305,13 +304,13 @@ useEffect(() => {
 })}
    </select>
    </label>   
-   <label className='group14' ></label>
-   <label className='group15' >
+   <label className='cargroup14' ></label>
+   <label className='cargroup15' >
         <text>Номер ведущего моста</text>
         <input type='text' readOnly={mode} defaultValue={drive_axle_number} onChange={e=>setdrive_axle_number(e.target.value)} ></input>
         </label>
-        <label className='group16' ></label>
-   <label className='group17' >
+        <label className='cargroup16' ></label>
+   <label className='cargroup17' >
         <text>Модель управляемого моста</text>
         <select size="1" disabled ={mode} onChange={e=>setsteerable_axle_model(e.target.value)}  >
         {(props.mode=="new")&&
@@ -321,38 +320,38 @@ useEffect(() => {
 })}
    </select>
    </label>
-   <label className='group18' ></label>
-   <label className='group19' >
+   <label className='cargroup18' ></label>
+   <label className='cargroup19' >
         <text>Номер управляемого моста</text>
         <input type='text' readOnly={mode} defaultValue={steerable_axle_number} onChange={e=>setsteerable_axle_number(e.target.value)} ></input>
         </label>
-        <label className='group20' ></label>
-   <label className='group21' >
+        <label className='cargroup20' ></label>
+   <label className='cargroup21' >
         <text>Договор поставки №, дата.</text>
         <input type='text' readOnly={mode} defaultValue={supply_contract} onChange={e=>setsupply_contract(e.target.value)} ></input>
         </label>
-        <label className='group22' ></label>
-   <label className='group23' >
+        <label className='cargroup22' ></label>
+   <label className='cargroup23' >
         <text>Дата отгрузки с завода</text>
         <input type='date' readOnly={mode} defaultValue={date_of_shipment_from_the_factory} onChange={e=>setdate_of_shipment_from_the_factory(e.target.value)}  ></input>
         </label>
-        <label className='group24' ></label>
-   <label className='group25' >
+        <label className='cargroup24' ></label>
+   <label className='cargroup25' >
         <text>Грузополучатель</text>
         <input type='text' readOnly={mode} defaultValue={consignee} onChange={e=>setconsignee(e.target.value)} ></input>
         </label>
-        <label className='group26' ></label>
-   <label className='group27' >
+        <label className='cargroup26' ></label>
+   <label className='cargroup27' >
         <text>Адрес поставки (эксплуатации)</text>
         <input type='text' readOnly={mode} defaultValue={delivery_address} onChange={e=>setdelivery_address(e.target.value)} ></input>
         </label>
-        <label className='group28' ></label>
-       <label className='group29' >
+        <label className='cargroup28' ></label>
+       <label className='cargroup29' >
         <text>Комплектация (доп. опции)</text>
         <input type='text' readOnly={mode} defaultValue={equipment} onChange={e=>setequipment(e.target.value)} ></input>
         </label>
-        <label className='group30' ></label>
-   <label className='group31' >
+        <label className='cargroup30' ></label>
+   <label className='cargroup31' >
         <text>"Клиент"</text>
         <select size="1" disabled ={mode} onChange={e=>setclient(e.target.value)}  >        
         {(props.mode=="new")&&
@@ -362,8 +361,8 @@ useEffect(() => {
 })}
    </select>
 </label>
-<label className='group32' ></label>
-   <label className='group33' >
+<label className='cargroup32' ></label>
+   <label className='cargroup33' >
         <text>Сервисная организация</text>
         <select size="1" disabled ={mode} onChange={e=>setservice_company(e.target.value)}  >
         {(props.mode=="new")&&

@@ -196,87 +196,87 @@ const ComplaintsForm = (props) => {
 };
   
 
-
+ 
    return (
     
-      <div className='ComplaintsForm'>      
-      <form> 
-      <label className='group1'>
-        <text>Дата отказа</text>       
-        <input type='date' readOnly={mode} defaultValue={date_of_refusal} onChange={e=>setdate_of_refusal(e.target.value)} ></input>
-        </label>
-        <label className='group2'></label>
-        <label className='group3'>
-        <text>Наработка м/час</text>       
-        <input type='text' readOnly={mode} defaultValue={operating_time} onChange={e=>setoperating_time(e.target.value)} ></input>
-        </label>
-        <label className='group4'></label>
-        <label className='group5'>
-        <text>Узел отказа</text>
-        <select size="1" disabled ={mode} onChange={e=>setMachine_components(e.target.value)}  >
-        {(props.mode=="new")&&
-        <option disabled selected value> Выберите Узел отказа</option>}
-             
-        {Machine_components_spr.map(value =>{         
-        return (value.id!=Machine_components)&&(<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>) 
+    <div className='ComplaintsForm'>      
+    <form> 
+    <label className='complaintsgroup1'>
+      <text>Дата отказа</text>       
+      <input type='date' readOnly={mode} defaultValue={date_of_refusal} onChange={e=>setdate_of_refusal(e.target.value)} ></input>
+      </label>
+      <label className='complaintsgroup2'></label>
+      <label className='complaintsgroup3'>
+      <text>Наработка м/час</text>       
+      <input type='text' readOnly={mode} defaultValue={operating_time} onChange={e=>setoperating_time(e.target.value)} ></input>
+      </label>
+      <label className='complaintsgroup4'></label>
+      <label className='complaintsgroup5'>
+      <text>Узел отказа</text>
+      <select size="1" disabled ={mode} onChange={e=>setMachine_components(e.target.value)}  >
+      {(props.mode=="new")&&
+      <option disabled selected value> Выберите Узел отказа</option>}
+           
+      {Machine_components_spr.map(value =>{         
+      return (value.id!=Machine_components)&&(<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>) 
 })}
-       
-   </select>
-   </label>
-   <label className='group6'></label>
-   <label className='group7'>
-         <text>Описание отказа </text>  
-        <input type='text' readOnly={mode} defaultValue={failure_node} onChange={e=>setfailure_node(e.target.value)} ></input>
-        </label>
-        <label className='group8'></label>
-        <label className='group9'>
-        <text>Способ восстановления </text>
-        <select size="1" disabled ={mode} onChange={e=>setrecovery_method(e.target.value)}  >
-        {(props.mode=="new")&&
-        <option disabled selected value>Выберите Способ восстановления </option>}
-              
-        {recovery_method_spr.map(value =>{         
-        return (value.id!=recovery_method)&&(<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>)  
+     
+ </select>
+ </label>
+ <label className='complaintsgroup6'></label>
+ <label className='complaintsgroup7'>
+       <text>Описание отказа </text>  
+      <input type='text' readOnly={mode} defaultValue={failure_node} onChange={e=>setfailure_node(e.target.value)} ></input>
+      </label>
+      <label className='complaintsgroup8'></label>
+      <label className='complaintsgroup9'>
+      <text>Способ восстановления </text>
+      <select size="1" disabled ={mode} onChange={e=>setrecovery_method(e.target.value)}  >
+      {(props.mode=="new")&&
+      <option disabled selected value>Выберите Способ восстановления </option>}
+            
+      {recovery_method_spr.map(value =>{         
+      return (value.id!=recovery_method)&&(<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>)  
 })} 
 </select>
 </label>
-<label className='group10'></label>
-<label className='group11'>
-      <text>Используемые запасные части </text>       
-        <input type='text' readOnly={mode} defaultValue={parts_used} onChange={e=>setparts_used(e.target.value)} ></input>
-       </label>
-       <label className='group12'></label>
-       <label className='group13'>
-        <text>Дата восстановления</text>       
-        <input type='date' readOnly={mode} defaultValue={date_of_restoration} onChange={e=>setdate_of_restoration(e.target.value)} ></input>
-       </label>
-       <label className='group14'></label>
-       <label className='group15'>
-        <text> Время простоя техники</text>       
-        <input type='text' readOnly={mode} defaultValue={equipment_downtime} onChange={e=>setequipment_downtime(e.target.value)} ></input>
-       </label>
-       <label className='group16'></label>
-       <label className='group17'>
-        <text>Машина</text>
-        <select size="1" disabled ={modecar} onChange={e=>setcar(e.target.value)}  >
-        {(props.mode=="new"&&props.formmode=="full")&&
-        <option disabled selected value> Выберите Машину</option>}              
-        {car_spr.map(value =>{         
-        return (value.id!=car)&&(<option value={value.id}>{value.factory_number}</option>)||(<option defaultValue={value.id}>{value.factory_number}</option>) 
+<label className='complaintsgroup10'></label>
+<label className='complaintsgroup11'>
+    <text>Используемые запасные части </text>       
+      <input type='text' readOnly={mode} defaultValue={parts_used} onChange={e=>setparts_used(e.target.value)} ></input>
+     </label>
+     <label className='complaintsgroup12'></label>
+     <label className='complaintsgroup13'>
+      <text>Дата восстановления</text>       
+      <input type='date' readOnly={mode} defaultValue={date_of_restoration} onChange={e=>setdate_of_restoration(e.target.value)} ></input>
+     </label>
+     <label className='complaintsgroup14'></label>
+     <label className='complaintsgroup15'>
+      <text> Время простоя техники</text>       
+      <input type='text' readOnly={mode} defaultValue={equipment_downtime} onChange={e=>setequipment_downtime(e.target.value)} ></input>
+     </label>
+     <label className='complaintsgroup16'></label>
+     <label className='complaintsgroup17'>
+      <text>Машина</text>
+      <select size="1" disabled ={modecar} onChange={e=>setcar(e.target.value)}  >
+      {(props.mode=="new"&&props.formmode=="full")&&
+      <option disabled selected value> Выберите Машину</option>}              
+      {car_spr.map(value =>{         
+      return (value.id!=car)&&(<option value={value.id}>{value.factory_number}</option>)||(<option defaultValue={value.id}>{value.factory_number}</option>) 
 })}
-   </select>
-   </label>
-   <label className='group18'></label>
-   <label className='group19'>
-        <text>Сервисная организация</text>
-        <select size="1" disabled ={mode} onChange={e=>setservice_company(e.target.value)}  >
-        {(props.mode=="new")&&
-        <option disabled selected value>Выберите Сервисную организацию </option>}            
-        {service_company_spr.map(value =>{         
-        return (value.id!=service_company)&& (<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>) 
+ </select>
+ </label>
+ <label className='complaintsgroup18'></label>
+ <label className='complaintsgroup19'>
+      <text>Сервисная организация</text>
+      <select size="1" disabled ={mode} onChange={e=>setservice_company(e.target.value)}  >
+      {(props.mode=="new")&&
+      <option disabled selected value>Выберите Сервисную организацию </option>}            
+      {service_company_spr.map(value =>{         
+      return (value.id!=service_company)&& (<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>) 
 })}
-   </select>
-   </label>
+ </select>
+ </label>
      </form>
         <br></br>
         <label className='Button1'>        

@@ -181,7 +181,8 @@ const MaintenanceForm = (props) => {
   });
 };
 //return (value.id!=service_company)&& (<option value={value.id}>{value.name}</option>)||(<option defaultValue={value.id}>{value.name}</option>)
-   return (    
+   return (     
+    
       <div className='MaintenanceForm'>    
       <form>
       <label className='group1'>
@@ -259,7 +260,7 @@ const MaintenanceForm = (props) => {
      </label>
       <br></br>
     
-      </div> 
+      </div>  
    
   )
 }
