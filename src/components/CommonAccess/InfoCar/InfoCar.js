@@ -127,9 +127,12 @@ to_and_complaints= () =>{
       
 
       rowClick: (e, row) => {
-       alert("clicked");
-        this.setState({ selectedId: row.getData().id });
-      },      
+        const id =row.getData().id;  
+        this.setState({ selectedId: id});
+        this.setState({ selectedCar: row.getData().factory_number});    
+        this.setState({ mode: "edit" }) 
+        this.setState({ in_detail: "info_car" })  
+         },      
     };
     
     return (
