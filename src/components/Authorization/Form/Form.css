@@ -13,7 +13,7 @@
     display: inline-block;
     text-decoration: none;
     color: #EBE6D6;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #6c757d;
     margin-right: 15px;
     width: 35%;
     padding-left: 0px;
@@ -25,13 +25,13 @@
 }
 .form__link_inactive{
     color: #EBE6D6;
-    border-bottom: 3px solid #EBE6D6;
+    border-bottom: 3px solid #6c757d;
     margin-right: 0px;
     width: 60%
 }
 .form__button{
     width: -webkit-fill-available;
-    background-color: #EBE6D6;
+    background-color: #6c757d;
     color: #163E6C;
     height: 60px;
     border-radius: 5px;

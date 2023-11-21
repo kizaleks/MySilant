@@ -1,44 +1,24 @@
 import axios from 'axios';
 import React from "react";
+import "./Maintenance.css"
 import { useState, useRef } from "react";
-//import "./References.css";
 import * as FormData from 'form-data'
 import MaintenanceForm from './MaintenanceForm/MaintenanceForm';
-//import CreateForm from './CreateForm/CreateForm';
-//import React, { useState, useRef } from "react";
 
-//import "react-tabulator/lib/styles.css"; // default theme
-//import "react-tabulator/css/tabulator_midnight.css"; // use Theme(s)
 
 import { ReactTabulator, reactFormatter } from "react-tabulator";
 
 
 const options = {
-  /*layoutColumnsOnNewData: true,
-  layout: "fitColumns", //fit columns to width of table (optional)
-  responsiveLayout: "hide", //hide columns that dont fit on the table
-  tooltips: true, //show tool tips on cells
-  addRowPos: "top", //when adding a new row, add it to the top of the table
-  history: true, //allow undo and redo actions on the table
-  groupBy: "userId",
-  pagination: "local", //paginate the data
-  paginationSize: 2, //allow 20 rows per page of data
-  paginationSizeSelector: [2, 5, 10, 200],
-  movableColumns: true, //allow column order to be changed
-  resizableRows: true //allow row order to be changed*/
+ 
   rowSelection: {
     mode: 'highlight',
     onChange: (data) => console.log(data),
   },
 };
-/*
-function inDetail() {    
-  alert("Кратко")
-  this.setState({ in_detail: false });   
-};*/
 
-class Maintenance  extends React.Component {  
-  //tabulatorRef = useRef(null);  
+
+class Maintenance  extends React.Component {   
   state = {
     data: [],
     url:"http://127.0.0.1:8000/mysilant/MaintenanceGet/", 
@@ -49,16 +29,13 @@ class Maintenance  extends React.Component {
     
   };
   ref = null;
-  inDetail= () =>{ 
-    //this.rowClick()  
-    //this.setState({ selectedName: rowData.id });
+  inDetail= () =>{    
     this.setState({ mode: "edit" }) 
     this.setState({ in_detail: true })       
   };
 
   create= () =>{ 
-    //this.rowClick()  
-    //this.setState({ selectedName: rowData.id });
+   
     this.setState({ mode: "new" }) 
     this.setState({ in_detail: true })       
   };
@@ -67,8 +44,7 @@ class Maintenance  extends React.Component {
     this.setState({ loding: false });   
   };
 
-  columns = [
-   // { title: '', field: 'checkbox', align: 'center', headerSort: false, formatter: 'rowSelection' },
+  columns = [   
     { title: "ID", field: "id",width: 150 },
     { title: "Машина", field: "car", width: 250, headerFilter: "input", },
     { title: "Сервисная организация", field: "service_company", width: 250, headerFilter: "input",  },
@@ -79,16 +55,12 @@ class Maintenance  extends React.Component {
   ];
   
   rowClick = (e, row) => {
-    // console.log("ref table: ", this.ref.current); // this is the Tabulator table instance
-    // console.log(`rowClick id: \${row.getData().id}`, row, e);
-   // alert(this.state.data[row.getPosition(true)-1].name)
-    //this.setState({ selectedId: row.getPosition(true)-1 });
+   
     const id =row.getData().id; 
     this.setState({ selectedId: id});
     this.setState({ mode: "edit" }) 
     this.setState({ in_detail: true })
-    //row.getData().name
-   // this.setState({ in_detail: true}); 
+    
   }; 
 
   setData = () => {
@@ -137,15 +109,17 @@ class Maintenance  extends React.Component {
     const options = {
       height: 300,
       width:500,
-      //movableRows: true,
-      //selectable: true,
+      
+
       rowClick: (e, row) => {
-        console.log("clicked");
-        this.setState({ selectedId: "row._cell" });
-      },      
+        const id =row.getData().id; 
+        this.setState({ selectedId: id});
+        this.setState({ mode: "edit" }) 
+        this.setState({ in_detail: true })  
+         },      
     };
     return (
-      <div>      
+      <div className="maintenance_title">      
       <h1>Информация по ТО  
       </h1>
       {(!this.state.loding)&& 
@@ -167,7 +141,7 @@ class Maintenance  extends React.Component {
        
 
       </div>
-    );
+    ); 
   }
 }
 

@@ -24,7 +24,7 @@ transition: 0.3s;
   line-height: 28px;
   font-size: 1.2em;
   color: #163E6C;
-} 
+}  
 
 @media (min-width: 1537px) and (max-width: 1920px)  {
   .References label {

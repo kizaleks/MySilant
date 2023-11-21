@@ -6,12 +6,12 @@
     margin-top: 40px;
 }
 .form__label{
-    color: #949494;
+    color: #6c757d;
 }
 .form__loginInput{
     height: 43px;
     border-radius: 5px;
-    border: 2px solid #C7C7C7;
+    border: 2px solid #6c757d;
     box-shadow: 0px 0px 20px rgb(0 0 0 / 5%);
 }
 .form__errText{

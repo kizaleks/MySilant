@@ -4,7 +4,7 @@
     color:  #163E6C;   
 
 }
-
+ 
 .BaseInfoCar button { 
     margin: 10px 10px;
     padding: 10px 15px;
@@ -23,7 +23,7 @@
       padding: 10px 15px;
       line-height: 28px;
       border-radius: 9px;
-      border: 2px solid #163E6C;
+      border: 2px solid #6c757d;
       font-size: 1.2em;
       color: #163E6C;
       background: #EBE6D6;
@@ -43,3 +43,72 @@
       background: white;
       transition: 0.3s;
     } 
+
+    @media (min-width: 1537px) and (max-width: 1920px)  {
+      .BaseInfoCar input {   
+        line-height: 28px;        
+        font-size: 1.2em;        
+      } 
+      .BaseInfoCar text{ 
+        font-size: 1.2em;
+      }
+      .BaseInfoCar button {       
+        line-height: 28px;        
+        font-size: 1.2em;        
+      }      
+    }
+    @media (min-width: 1441px) and (max-width: 1536px)  {
+      .BaseInfoCar input {   
+        line-height: 24px;        
+        font-size: 1.2em;        
+      } 
+      .BaseInfoCar text{ 
+        font-size: 1.2em;
+      }
+      .BaseInfoCar button {       
+        line-height: 24px;        
+        font-size: 1.2em;        
+      } 
+    }
+    @media (min-width: 1367px) and (max-width: 1440px)  {
+      .BaseInfoCar input {   
+        line-height: 20px;        
+        font-size: 1em;        
+      } 
+      .BaseInfoCar text{ 
+        font-size: 1em;
+      }
+      .BaseInfoCar button {       
+        line-height: 20px;        
+        font-size: 1em;        
+      } 
+    }
+    @media (min-width: 360px) and (max-width: 1366px) {
+      .BaseInfoCar input {   
+        line-height: 18px;        
+        font-size: 1em;        
+      } 
+      .BaseInfoCar text{ 
+        font-size: 1em;
+      }
+      .BaseInfoCar button {              
+        line-height: 18px;        
+        font-size: 1em;        
+      } 
+    }
+    @media screen and (max-width:360px) {
+      .BaseInfoCar input {
+        display: block ;   
+        line-height: 20px;        
+        font-size: 0.8em;        
+      } 
+      .BaseInfoCar text{
+        display: block ; 
+        font-size: 1em;
+      }
+      .BaseInfoCar button {
+        display: block ;       
+        line-height: 20px;        
+        font-size: 1em;        
+      } 
+    }

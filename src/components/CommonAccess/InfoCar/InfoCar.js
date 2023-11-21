@@ -1,46 +1,22 @@
 import axios from 'axios';
 import React from "react";
-
 import  {useState, useEffect} from "react";
-//import "./References.css";
+
 import * as FormData from 'form-data'
 import FullDateForm from './FullDateForm/FullDateForm';
 import TO_and_complaint from './TOandcomplaints/TOandcomplaints';
 import "./InfoCar.css"
 
-//import CreateForm from './CreateForm/CreateForm';
-//import React, { useState, useRef } from "react";
-
-//import "react-tabulator/lib/styles.css"; // default theme
-
-//import "react-tabulator/css/tabulator_midnight.css"; // use Theme(s)
-
 import { ReactTabulator, reactFormatter } from "react-tabulator";
 
 
 const options = {
-  /*layoutColumnsOnNewData: true,
-  layout: "fitColumns", //fit columns to width of table (optional)
-  responsiveLayout: "hide", //hide columns that dont fit on the table
-  tooltips: true, //show tool tips on cells
-  addRowPos: "top", //when adding a new row, add it to the top of the table
-  history: true, //allow undo and redo actions on the table
-  groupBy: "userId",
-  pagination: "local", //paginate the data
-  paginationSize: 2, //allow 20 rows per page of data
-  paginationSizeSelector: [2, 5, 10, 200],
-  movableColumns: true, //allow column order to be changed
-  resizableRows: true //allow row order to be changed*/
   rowSelection: {
     mode: 'highlight',
     onChange: (data) => console.log(data),
   },
 };
-/*
-function inDetail() {    
-  alert("Кратко")
-  this.setState({ in_detail: false });   
-};*/
+
 
 class InfoCar extends React.Component {  
   //tabulatorRef = useRef(null);  
@@ -55,10 +31,7 @@ class InfoCar extends React.Component {
     
   };
   ref = null;
-  inDetail= () =>{ 
-    //this.rowClick()  
-    //this.setState({ selectedName: rowData.id });
-    //this.rowClick()
+  inDetail= () =>{     
     alert(this.state.selectedId)
     this.setState({ mode: "edit" }) 
     this.setState({ in_detail: "look_car" })       
@@ -67,8 +40,7 @@ to_and_complaints= () =>{
   this.setState({ in_detail: "info_car" })       
 };
   create= () =>{ 
-    //this.rowClick()  
-    //this.setState({ selectedName: rowData.id });
+    
     this.setState({ mode: "new" }) 
     this.setState({ in_detail: "look_car" })       
   };
@@ -77,8 +49,7 @@ to_and_complaints= () =>{
     this.setState({ in_detail: "table" });   
   };
 
-  columns = [
-   // { title: '', field: 'checkbox', align: 'center', headerSort: false, formatter: 'rowSelection' },
+  columns = [   
     { title: "ID", field: "id",width: 70,frozen:true },
     { title: "Заводской номер", field: "factory_number", width: 250, headerFilter: "input",frozen:true },
     { title: "Дата отгрузки с завода", field: "date_of_shipment_from_the_factory", width: 200, headerFilter: "input", },
@@ -94,21 +65,19 @@ to_and_complaints= () =>{
     this.setState({ selectedId: id});
     this.setState({ selectedCar: row.getData().factory_number});    
     this.setState({ mode: "edit" }) 
-    this.setState({ in_detail: "info_car" })  
-    //row.getData().name
-   // this.setState({ in_detail: true}); 
+    this.setState({ in_detail: "info_car" })      
   }; 
 
   setData = () => {
     this.setState({ data: [] });
     const token = localStorage.getItem('Token')
     let сategory="";
-    //сategory ="manufacturer" 
+   
      if(localStorage.getItem('сategory')=="Менеджер"){сategory ="manufacturer" }
      if(localStorage.getItem('сategory')=="Сервисная организация"){сategory ="service_company"}
      if(localStorage.getItem('сategory')=="Клиент"){сategory ="client"}
      const company_id = localStorage.getItem('company_id')
-    //alert(this.state.url+"?type_company="+сategory+"&id_company="+company_id)          
+            
     this.setState({loding: true});
     axios.get(this.state.url+"?type_company="+сategory+"&id_company="+company_id).then(res => {   
         this.setState({ data: res.data});
@@ -121,25 +90,25 @@ to_and_complaints= () =>{
   render() {
     const options = {
       height: 300,
-      width:500,
-      //movableRows: true,
-      //selectable: true,
-      
+      width:500,     
 
       rowClick: (e, row) => {
-       alert("clicked");
-        this.setState({ selectedId: row.getData().id });
-      },      
+        const id =row.getData().id;  
+        this.setState({ selectedId: id});
+        this.setState({ selectedCar: row.getData().factory_number});    
+        this.setState({ mode: "edit" }) 
+        this.setState({ in_detail: "info_car" })  
+         },      
     };
     
     return (
-      <div> 
+      <div className="infocar_title"> 
          {(this.state.in_detail=="table")&&     
       <h1>Информация по машинам</h1>}
       {(!this.state.loding)&& 
       this.setData()
   }   
-      
+        
       
       {(this.state.in_detail=="table")&&
         <ReactTabulator columns={this.columns} data={this.state.data} events={{

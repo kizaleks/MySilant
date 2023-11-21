@@ -25,13 +25,14 @@
 }
 @media (min-width: 1367px) and (max-width: 1440px)  {
   .accountPanel button {
-    font-size: 1.2em;      
+    font-size: 1em;      
       width: 20vw;
   }
 }
 @media (min-width: 360px) and (max-width: 1366px) {
-  .accountPanel button {
-    font-size: 1em;     
+  .accountPanel button {   
+      font-size: 0.6em;
+      line-height: 15px; 
       width: 20vw;
     }
 }

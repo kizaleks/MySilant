@@ -18,3 +18,34 @@
   transition: 0.3s;
   }
 
+
+  @media (min-width: 1537px) and (max-width: 1920px)  {
+    .infocar_title h1 {    
+      font-size: 1.8em;    
+    } 
+   
+  }
+  @media (min-width: 1441px) and (max-width: 1536px)  {
+    .infocar_title h1 {    
+      font-size: 1.4em;    
+    }  
+   
+  }
+  @media (min-width: 1367px) and (max-width: 1440px)  {
+    .infocar_title h1 {    
+      font-size: 1.4em;    
+    } 
+    
+  }
+  @media (min-width: 360px) and (max-width: 1366px) {
+    .infocar_title h1 {    
+      font-size: 1.2em;    
+    }  
+   
+  }
+  @media (max-width:360px) {
+    .infocar_title h1 {    
+      font-size: 1em;    
+    } 
+   
+  }

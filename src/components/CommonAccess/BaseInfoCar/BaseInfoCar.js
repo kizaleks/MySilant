@@ -40,9 +40,9 @@ const editableColumns = [  {
     width: 180,    
   },
   {
-    title: "Модель в-го моста",
+    title: "Модель ведущего моста",
     field: "drive_axle_model",
-    width: 180,
+    width: 250,
        
   },
   {
@@ -52,14 +52,14 @@ const editableColumns = [  {
       
   },
   {
-    title: "Модель у-го моста",
+    title: "Модель управляемого моста",
     field: "steerable_axle_model",
-    width: 180,
+    width: 250,
   },
   {
-    title: "N у-го моста",
+    title: "N управляемого моста",
     field: "steerable_axle_number",
-    width: 180,    
+    width: 250,    
   },
 
 ];
@@ -70,24 +70,18 @@ const options = {
     
     onChange: (data) => setlines(1),
   },
-  height:"311px",
+  height:"68px",
 };
 
 const BaseInfoCar = () => {
   const [InfoCar, setInfoCar] = useState('');
   const [isLoading, setLoading] = useState('');
-  const [isfind, setfind] = useState('Найдена информация');
-
+  
   const search = () => {  
-    setLoading("")    
+       
     axios.get(`http://127.0.0.1:8000/mysilant/Base_Car/?factory_number=${InfoCar}`).then(res => {
         
-        setLoading(res.data); 
-        if (isLoading!=""){         
-          setfind("Найдена информация")  
-        } else{
-           setfind("Информация не найдена")
-        }                      
+        setLoading(res.data);                              
           }).catch(function (error) {
            
           })
@@ -102,7 +96,7 @@ return (
       <input type="text" name="BaseInfoCar" onChange={e=>setInfoCar(e.target.value)}/> 
       <button onClick={search}>Найти</button>  
     <br></br>
-      {isfind}
+      
     <div>
     <h3>Базовая информация по машине</h3>
     <label className='TableBaseInfoCar'>

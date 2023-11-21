@@ -123,11 +123,12 @@ class References extends React.Component {
     { title: "Наименование", field: "name", width: 350, headerFilter: "input" },
     { title: "Описание", field: "description", width: 450, headerFilter: "input"},    
   ];
+  /*
   columns_red2 = [
     { title: "ID", field: "id",width: 150, },
     { title: "Название", field: "name", width: 350, headerFilter: "input" },
     { title: "Телефон", field: "telephone", width: 450, headerFilter: "input"},    
-  ];
+  ];*/
 
   rowClick = (e, row) => {
     // console.log("ref table: ", this.ref.current); // this is the Tabulator table instance
@@ -204,23 +205,20 @@ class References extends React.Component {
   };
   
 
+
+
   render() {
+    
     const options = {
       height: 300,
       width:500,
-      movableRows: true,
-      selectable: true,
       rowClick: (e, row) => {
-        console.log("clicked");
-        this.setState({ selectedName: row.getData().name });
-      },
-      selectableCheck: function (row) {
-        //row - row component
-        return row.getData().color !== "yellow"; //allow selection of rows where the age is greater than 18
-      },
-      rowSelectionChanged: function (data, rows) {
-        console.log("selected rows:", rows);
-      }
+        /*const id =row.getData().id;  
+        this.setState({ selectedId: id});
+        this.setState({ selectedCar: row.getData().factory_number});    
+        this.setState({ mode: "edit" }) 
+        this.setState({ in_detail: "info_car" })  */
+         },      
     };
     return (
       <div className='References'>    
@@ -244,29 +242,23 @@ class References extends React.Component {
       <label> <input onChange={e=>this.setUrl("Machine_components")} type="radio" name="Radio" value="Machine_components" /> Справочник Узлы машины </label>
       <br></br>
       <label> <input onChange={e=>this.setUrl("Service_company")} type="radio" name="Radio" value="Service_company" /> Справочник Сервисные компании </label>
-      <br></br>
-      <label> <input onChange={e=>this.setUrl("Counterparty")} type="radio" name="Radio" value="Counterparty" /> Справочник Контрагенты</label>
-      <br></br>
+      <br></br>      
       <br></br>
       </div>
       <div className='References'>
       {(!this.state.loding)&& 
       this.setData()
-  } 
+  }  
       <h1>{this.state.references_name}    
         </h1>
         {(localStorage.getItem('сategory')=="Менеджер"&&this.state.references_name!="Справочник Контрагенты")&&
-        <ReactTabulator columns={this.columns} data={this.state.data} />
+        <ReactTabulator columns={this.columns} data={this.state.data} options={options}/>
   }
-  {(localStorage.getItem('сategory')=="Менеджер"&&this.state.references_name=="Справочник Контрагенты")&&
-  <ReactTabulator columns={this.columns_red2} data={this.state.data} />
-}
+ 
   {(localStorage.getItem('сategory')!="Менеджер"&&this.state.references_name!="Справочник Контрагенты")&&
-        <ReactTabulator columns={this.columns_red} data={this.state.data} />
+        <ReactTabulator columns={this.columns_red} data={this.state.data}  options={options} />
   }
-  {(localStorage.getItem('сategory')!="Менеджер"&&this.state.references_name=="Справочник Контрагенты")&&
-        <ReactTabulator columns={this.columns_red2} data={this.state.data} />
-  }
+ 
 
   {(localStorage.getItem('сategory')=="Менеджер"&&this.state.references_name!="Справочник Контрагенты")&&
         <CreateForm/>
