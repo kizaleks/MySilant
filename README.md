@@ -31,9 +31,9 @@
 
 Запуск проекта
 backend
-pip install -r requirements.txt
-cd mysilant
-python manage.py runserver
+1.Выполнить команду pip install -r requirements.txt
+2. Выполнить команду cd mysilant
+3. Выполнить команду python manage.py runserver
 Frontend
 1.Выполнить команду npm install 
 2.Выполнить npm start
